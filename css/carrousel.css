@@ -2,6 +2,7 @@
     width: 490px;
     padding-top: 50px;
     padding-bottom: 50px;
+
 }
 
 .swiper-slide {
@@ -9,14 +10,46 @@
     background-size: cover;
     width: 300px;
     height: 300px;
+    opacity: 0.1;
 }
 
 .swiper-slide img {
     display: block;
     width: 100%;
+    opacity: 0.1;
+}
+
+.swiper-slide p,
+.swiper-slide h3 {
+
+    opacity: 0.01;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
     color: white;
 }
+
+.swiper-slide-duplicate-next {
+    opacity: 0.01
+}
+
+.swiper-slide-visible img,
+.swiper-slide-visible,
+.swiper-slide-active p,
+.swiper-slide-active h3 {
+    opacity: 1
+}
+
+
+
+/* .swiper-slide-prev,
+.swiper-slide-next {
+    opacity: 0.01
+}
+
+.swiper-slide-text-prev,
+.swiper-slide-text-next {
+    opacity: 0.01
+} */
+
