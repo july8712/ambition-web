@@ -418,6 +418,25 @@ video{
     line-height: 38px;
 }
 
+/*
+    slide text customizations
+*/
+
+.swiper-wrapper-text {
+    display: flex
+}
+
+.slide-text {
+    transform: translateY(54vh);
+    opacity: 0;
+}
+
+.slide-active {
+    transform: translateY(0);
+   opacity: 1;
+   display: inline-block;
+}
+
 /***************************************** Sección Nosotros ************************************* */
 
 #secNosotros{
@@ -505,6 +524,38 @@ video{
     height: 200px;
     border-radius: 50%;
 
+}
+
+/******************************************** Contacto ***************************************/
+
+#secContacto {
+    height: 100%;
+    background-color: #621E7E;
+    /* padding-top: 40vh; */
+        /* width: 100%;
+    height: 100%; */
+    padding-top: 30vh;
+
+}
+
+#secContacto .contenedor {
+    display: flex;
+    margin: auto auto;;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;
+    height: 100%; */
+    background-color: #1F1F1F;
+    width: 40%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+
+}
+
+.contenedor h3 {
+    margin-bottom: 1rem;
 }
 
 
