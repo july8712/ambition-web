@@ -496,8 +496,23 @@ video{
     flex-wrap: wrap;
 }
 
+.integrantes{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 110px;
+}
+
+.integrantes h3{
+    font-weight: 800;
+    font-size: 46px;
+    margin-bottom: 150px;
+}
+
 .contIntegrantes{
     display: flex;
+    gap: 50px;
 }
 
 .contIntegrantes img{
@@ -507,6 +522,70 @@ video{
 
 }
 
+.integrante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.integrante h4{
+    text-align: center;
+    width: 250px;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+
+.integrante h4 span{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.clientes{
+    background: #621E7E;
+    width: 100%;
+}
+
+.contClientes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.galeriaClientes{
+    display: flex;
+    width: 80%;
+    justify-content:space-between;
+    padding: 50px;
+}
+
+.contClientes h3{
+    font-weight: 800;
+    font-size: 46px;
+}
+
+.galeriaClientes img{
+    height:47px;
+}
+
+#secNosotros .accion{
+    padding: 200px 0 100px 0;
+}
+
+#secNosotros .accion p{
+    font-weight: 800;
+    font-size: 46px;
+    letter-spacing: -0.005em;
+}
+
+#secNosotros .accion p span{
+    color: #962BC2;
+    margin-left: 10px;
+}
 
 /******************************************** Footer ***************************************/
 
