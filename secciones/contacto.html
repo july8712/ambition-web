@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav -->
+    <link rel="icon" type="image/png" sizes="16x16"  href="../assets/img/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Nosotros | Ambition</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div class="contenedor-nav">
+                    <div>
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../assets/img/logo.png" width="70" height="70"alt="Logo Ambition" class="logo logo-grande">
+                            <img src="../assets/img/logo_chico.png" width="70" height="70"alt="Logo Ambition" class="logo logo-chico">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <video src="../assets/videos/01.mp4" type="video/mp4" autoplay loop="true" width="1920" height="890" poster="../assets/img/fondo.png" muted>
+            <!-- Tu navegador no admite el elemento <code>video</code>. -->
+        </video>
+        <div id="tituloPrincipal">
+            <h1>Estamos<br>para ayudarte</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
+        </div>
+    </header>
+    <main>
+        <section id="secContacto">
+            <div>
+                <div class="contFormulario">
+                    <div>
+                        <h2>Completá el formulario</h2>
+                    </div>
+                    <div>
+                        <form action="">
+                            <div>
+                                <div class="contColumnas">
+                                    <div class="columnaForm">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+
+                                        <label for="celular">Celular</label>
+                                        <input type="text" placeholder="541112345678" id="celular" name="celular">
+                                    </div> 
+
+                                    <div class="columnaForm">
+                                        <label for="email">Correo Electrónico</label>
+                                        <input type="email" placeholder="tudireccion@email.com" id="email" name="email">
+                                        
+                                        <label for="asesoria">Búscas asesoría en:</label>
+                                        <div class="asesoria">
+                                            <div>
+                                                <label for="marca" class="check"><input type="checkbox" name="marca" id="marca">Diseño de marca</label>
+                                                <label for="rrss" class="check"><input type="checkbox" name="rrss" id="rrss">Redes Sociales</label>
+                                                <label for="app" class="check"><input type="checkbox" name="app" id="app">Diseño de app</label>
+                                            </div>
+                                            <div>
+                                                <label for="uxui" class="check"><input type="checkbox" name="uxui" id="uxui">Diseño UX/UI</label>
+                                                <label for="manifiesto" class="check"><input type="checkbox" name="manifiesto" id="manifiesto">Manifiesto</label>
+                                                <label for="identidades" class="check"><input type="checkbox" name="identidades" id="identidades">Identidades</label>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="consulta">
+                                <label for="consulta">Contanos sobre tu proyecto</label>
+                                <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Tengo un emprendimiento de..."></textarea>
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <img src="../assets/img/7.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <img src="../assets/img/logo_blanco.png" alt="Logo Ambition">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
+            <ul>
+                <li><img src="assets/img/WhatsApp.png" alt="WhatsApp" class="redes"> +54 351 1234567</li>
+                <li><img src="assets/img/facebook.png" alt="Facebook" class="redes"> @ambtionagencia</li>
+                <li><img src="assets/img/Instagram.png" alt="Instagram" class="redes">@ambitionagenciamkt</li>
+                <li><img src="assets/img/linkedin.svg" alt="Linkedin" class="redes">@ambitionagenciamkt</li>
+                <li><img src="assets/img/mail.png" alt="Email" class="redes">@ambitionagenciamkt</li>
+            </ul> 
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
