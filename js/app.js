@@ -33,64 +33,64 @@ function cerrarProyecto(id){
 
 // ======= SWIPER TEXT PART =======
 
-const swiperMod = document.querySelector('.swiperMod')
-const style = getComputedStyle(swiperMod);
+// const swiperMod = document.querySelector('.swiperMod')
+// const style = getComputedStyle(swiperMod);
 
 
 
-let index 
-let positionY 
-let positionX  
+// let index 
+// let positionY 
+// let positionX  
 
-function getIndex(){
-   index = style.zIndex
-   return index
-}
-
-
+// function getIndex(){
+//    index = style.zIndex
+//    return index
+// }
 
 
-setInterval(() => {
-   const matrix = new WebKitCSSMatrix(style.transform);
-   // transform: matrix3d(m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44)
 
-   function getPositionY(){
-      positionY = matrix.m41
-      return positionY
-   }
+
+// setInterval(() => {
+//    const matrix = new WebKitCSSMatrix(style.transform);
+//    // transform: matrix3d(m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44)
+
+//    function getPositionY(){
+//       positionY = matrix.m41
+//       return positionY
+//    }
    
-   function getPositionX(){
-      positionX = matrix.m43
-      return positionX
-   }
+//    function getPositionX(){
+//       positionX = matrix.m43
+//       return positionX
+//    }
 
-   let swiperText1 = document.querySelector('#slide-1')
-   let swiperText2 = document.querySelector('#slide-2')
-   let swiperText3 = document.querySelector('#slide-3')
+//    let swiperText1 = document.querySelector('#slide-1')
+//    let swiperText2 = document.querySelector('#slide-2')
+//    let swiperText3 = document.querySelector('#slide-3')
  
  
-   getIndex();
-   getPositionY();
-   getPositionX();
+//    getIndex();
+//    getPositionY();
+//    getPositionX();
 
-  console.log( getIndex());
-  console.log(getPositionY());
-  console.log(getPositionX());
+//   console.log( getIndex());
+//   console.log(getPositionY());
+//   console.log(getPositionX());
 
-   console.log(swiperText1)
+//    console.log(swiperText1)
 
   
-   console.log('INDEX', index)
-   if( index === -5 ){
+//    console.log('INDEX', index)
+//    if( index === -5 ){
 
-      swiperText1.classList.add('slide-active')
-
-
-   }
+//       swiperText1.classList.add('slide-active')
 
 
+//    }
 
-}, 500)
+
+
+// }, 500)
 
 
 
