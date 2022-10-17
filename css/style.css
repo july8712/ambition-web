@@ -265,7 +265,7 @@ video{
     margin-bottom:60px !important;
 }
 
-.accion a{
+.btn-primary{
     background: #621E7E;
     border-radius: 56px;
     padding: 15px 50px;
@@ -277,7 +277,7 @@ video{
     text-decoration: none;
 }
 
-.accion a:hover{
+.btn-primary:hover{
     background: #853BA6;;
 }
 
@@ -624,6 +624,7 @@ form div:first-child{
     display: flex;
     flex-direction: row !important;
     justify-content:center;
+    padding: 168px 0;
 }
 
 #secContacto div:first-child{
@@ -631,11 +632,16 @@ form div:first-child{
     justify-content: space-between;
 }
 
-#secContacto img{
+.imgContacto{
     width: 870px;
-    height: 580px;
+    /* width: 100%; */
+    /* height: 580px; */
     border-radius:30px;
     margin-left: 50px;
+    background-image: url(../assets/img/7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #secContacto h2{
@@ -707,9 +713,11 @@ input[type="checkbox"]{
     margin-right: 10px;
 }
 
-/* .columnaForm:first-child{
-    width: 400px;
-} */
+.envio{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
 /******************************************** Footer ***************************************/
 
 footer{
