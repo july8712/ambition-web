@@ -70,19 +70,19 @@
             <h3>Consultanos:</h3>
             <form onsubmit="sendEmail(event)" action="#" id="contact-form" class="contact-form">
                 <p><label for="name">Nombre:</label> </p>
-                <p><input name="name" onchange="writeName()" id="name" type="text"  placeholder="ej: Maria Ruiz"></p> 
+                <p><input name="name" onchange="writeData()" id="name" type="text"  placeholder="ej: Maria Ruiz"></p> 
      
                 <p><label for="phone">Celular:</label></p>
-                <p><input name="phone" onchange="writeName()" id="phone" type="text" placeholder="ej: +5493445588616"></p> 
+                <p><input name="phone" onchange="writeData()" id="phone" type="text" placeholder="ej: +5493445588616"></p> 
 
                 <p><label for="email">Correo electrónico:</label></p>
-                <p><input name="email" onchange="writeName()" type="email" id="email" placeholder="ej: maria-ruiz@email.com"></p>
- <!-- 
+                <p><input name="email" onchange="writeData()" type="email" id="email" placeholder="ej: maria-ruiz@email.com"></p>
+
                 <p><label for="type">Buscas asesoria en:</label></p>
                 <p>
                    <div>
-                       <label><input type="checkbox" name="brandDesign" id="">Diseño de marca</label>
-                       <label><input type="checkbox" name="brandDesign" id="">Diseño UX/UI</label>
+                       <label><input type="checkbox" onclick="writeCheckboxBrand()" name="brandDesign" id="checkboxBrand">Diseño de marca</label>
+                       <label><input type="checkbox" onclick="writeCheckboxUX()" name="brandDesign" id="checkboxUX">Diseño UX/UI</label>
                     </div>
                     <div>
                         <label><input type="checkbox" name="brandDesign" id="">Redes sociales</label>
@@ -96,9 +96,9 @@
 
 
                 <p><label for="message">Contanos sobre tu proyecto:</label></p>
-                <p><textarea name="message"  id="message" cols="25" rows="10" placeholder="Escribe tu mensaje"></textarea></p>
-                -->
-                <button > Send </button>
+                <p><textarea name="message"  id="message" onkeypress="writeData()"  cols="25" rows="10" placeholder="Escribe tu mensaje"></textarea></p>
+               
+                <button> Send </button>
             </form>
         </div>  
     </section>

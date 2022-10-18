@@ -9,16 +9,60 @@ window.addEventListener("load", function(event) {
     const name = document.querySelector('#name')
     const email = document.querySelector('#email')
     const phone = document.querySelector('#phone')
+    const message = document.querySelector('#message')
+    const checkboxBrand = document.querySelector('#checkboxBrand')
+    const checkboxUX = document.querySelector('#checkboxUX')
+
+
 
     let nameCurrentValue = name.value
     let emailCurrentValue = email.value
     let phoneCurrentValue = phone.value
+    let messageCurrentValue = message.value
+    let checkboxBrandCurrentValue 
+    let checkboxUXCurrentValue
+    
+    // MARCA CHECKBOX
+    writeCheckboxBrand = () => {
+        if (checkboxBrand.checked) {
+            checkboxBrandCurrentValue = 'Quiero diseñar mi marca'
+            // alert(checkboxMarcaCurrentValue)
+        } else {
+            checkboxBrandCurrentValue = ''
+        }
+    }
 
-    writeName = () => {
+    // UX CHECKBOX
+    writeCheckboxUX = () => {
+        if (checkboxUX.checked) {
+            checkboxUXCurrentValue = 'Quiero diseñar UX/UI'
+            // alert(checkboxUXCurrentValue)
+        } else {
+            checkboxUXCurrentValue = ''
+        }
+    }
+
+    // RRSS SOCIAL MEDIA CHECKBOX
+    writeCheckboxRR = () => {
+        if (checkboxUX.checked) {
+            checkboxUXCurrentValue = 'Quiero diseñar UX/UI'
+            // alert(checkboxUXCurrentValue)
+        } else {
+            checkboxUXCurrentValue = ''
+        }
+    }
+         
+ 
+
+    writeData = () => {
         nameCurrentValue = name.value
         emailCurrentValue = email.value
         phoneCurrentValue = phone.value
-        console.log('nameCurrentValue',nameCurrentValue)
+        checkboxBrandCurrentValue = checkboxBrand.value
+        checkboxUXCurrentValue = checkboxUXCurrentValue.value
+        messageCurrentValue = message.value
+
+        alert('nameCurrentValue',messageCurrentValue)
     }
 
 
@@ -39,6 +83,10 @@ window.addEventListener("load", function(event) {
 
             this.alert('Por favor, complete el campo EMAIL')
 
+        } else if(messageCurrentValue.length === 0) {
+
+            this.alert('Por favor, complete el campo EMAIL')   
+
         } else {
 
 
@@ -46,7 +94,9 @@ window.addEventListener("load", function(event) {
                 ${nameCurrentValue}
                 ${phoneCurrentValue}
                 ${emailCurrentValue}
-                
+                ${checkboxBrandCurrentValue}
+                ${checkboxUXCurrentValue}
+                ${messageCurrentValue}
             `
             this.alert(message)
         
