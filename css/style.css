@@ -80,14 +80,29 @@ header{
     padding: 30px 0;
     width: 80%;
     transition: 0.7s;
+    z-index: 1;
 }
 
 .navbar-brand {
     padding-bottom: 0 !important;
     display: inline-block;
     position: relative;
-    min-height: 70px;
-    min-width: 70px;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.navbar-dark .navbar-toggler,
+.navbar-dark .navbar-toggler:focus {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-collapse {
+    width: 90%;
+    text-align: right;
+    margin-top: 10px;
+    padding: 10px 30px;
 }
 
 .contenedor-nav{
@@ -95,6 +110,7 @@ header{
     justify-content:space-between;
     width: 80%;
     transition: 0.7s;
+    flex-wrap: wrap;
 }
 
 nav .container-fluid{
@@ -196,6 +212,10 @@ video{
 .servIndex{
     display: flex;
     margin-bottom: 200px;
+}
+
+.servIndexMobile{
+    display: none;
 }
 
 .columna{
@@ -924,8 +944,10 @@ footer ul li{
 /* ************************************ Celular ******************************************** */
 
 @media (max-width: 768px) {
-    header{
-        height:50vh;
+    header {
+        height: 50vh;
+        width: 100%;
+        overflow: hidden;
     }
 
     video{
@@ -933,14 +955,94 @@ footer ul li{
         width: auto;
     }
 
+    #tituloPrincipal {
+        top: 168px;
+    }
+
     #tituloPrincipal p {
         font-size: 16px;
         width: 320px;
         margin: auto;
+    }
+
+    .servIndex{
+        display: none;
+    }
+
+    .titServicio {
+        height: 213px;
+    }
+
+    .accion p {
+        width: 373px;
+        margin-bottom: 40px !important;
+    }
+
+    .columna div h2 {
+        text-align: center;
+    }
+
+    footer .contenedor {
+        flex-direction: column;
+    }
+
+    .logo_footer, footer p{
+        margin-bottom:40px;
+    }
+
+    footer ul li {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .redes{
+        width: 30px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding: 60px 0 40px 0;
+    }
+
+    footer p {
+        font-size: 16px;
+        width: 316px;
     }
 }
 
 
 @media (max-width: 420px) {
     
+    h1 {
+        font-size: 40px;
+    }
+
+    #tituloPrincipal p {
+        font-size: 14px;
+        width: 269px;
+    }
+
+    #serviciosIndex p,
+    #secProyectos p {
+        font-size: 15px;
+        line-height: 35px;
+        /* margin-bottom: 75px; */
+    }
+
+    .accion p, footer p{
+        width:80%;
+    }
+
+    .navbar {
+        background-color: #090909;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
 }
