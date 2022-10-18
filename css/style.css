@@ -973,6 +973,10 @@ footer ul li{
         height: 213px;
     }
 
+    .servIndexMobile{
+        display: flex;
+    }
+
     .accion p {
         width: 373px;
         margin-bottom: 40px !important;
