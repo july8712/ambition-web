@@ -27,8 +27,10 @@
             emailjs.sendForm('service_zaxcxon', 'template_8fxppch', '.contact-form', 'yy3goWZgjqVfTC3wF')
                         .then(function() {
                             console.log('SUCCESS!');
+                            alert('Mensaje enviado correctamente');
                         }, function(error) {
                             console.log('FAILED...', error);
+                            alert('Error al enviar el mensaje');
                         }
             );
            
