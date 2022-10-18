@@ -1,9 +1,8 @@
-if(document.width > 420) {
-   window.addEventListener("scroll", function() {
-      let nav = document.querySelector("nav");
-      nav.classList.toggle("oscurecer", scrollY>0);
-   })
-}
+window.addEventListener("scroll", function() {
+   let nav = document.querySelector("nav");
+   nav.classList.toggle("oscurecer", scrollY>0);
+})
+
 
 let cardProyecto = document.querySelector(".cardProyecto");
 
