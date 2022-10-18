@@ -634,8 +634,6 @@ form div:first-child{
 
 .imgContacto{
     width: 870px;
-    /* width: 100%; */
-    /* height: 580px; */
     border-radius:30px;
     margin-left: 50px;
     background-image: url(../assets/img/7.png);
@@ -752,3 +750,197 @@ footer ul li{
     margin-right: 10px;
 }
 
+
+
+
+/* ************************************ Tablet ********************************************* */
+
+@media (max-width: 1280px) {
+
+    .contenedor-nav{
+        width: 90%;
+    }
+    
+    .nav-item{
+        font-size:20px;
+        margin-left: 20px;
+    }
+
+    .logo{
+        width:90px;
+        height: 90px;
+    }
+
+    h1{
+        font-size:75px;
+    }
+
+    #tituloPrincipal{
+        top: 195px;
+    }
+
+    #tituloPrincipal p {
+        font-size: 25px;
+        width: 700px;
+    }
+
+    #serviciosIndex, #secProyectos, #secServicios, #secNosotros, #secContacto{
+        padding: 120px 0 75px 0;
+    }
+
+    .servIndex {
+        margin-bottom: 111px;
+    }
+
+    #serviciosIndex p, #secProyectos p {
+        font-size: 26px;
+        line-height: 44px;
+        margin-bottom: 106px;
+    }
+
+    .linea {
+        width: 35px;
+    }
+
+    .linea span {
+        width: 95px;
+        height: 95px;
+    }
+
+    .columna img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .titServicio {
+        width: 350px;
+        height: 400px;
+    }
+
+    .columna div h2 {
+        font-size: 50px;
+    }
+
+    .columna {
+        margin: 0 100px;
+    }
+
+    .contenedor {
+        width: 90%;
+    }
+
+    .logo_footer{
+        width: 125px;
+    }
+
+    footer{
+        padding: 40px 0;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+    ol,ul {
+        padding-left: 0;
+    }
+
+    dl,ol,ul {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 54px;
+    }
+
+    #tituloPrincipal {
+        top: 122px;
+    }
+
+    #tituloPrincipal p {
+        font-size: 18px;
+        width: 513px;
+    }
+
+    #serviciosIndex,#secProyectos,#secServicios,#secNosotros,#secContacto {
+        padding: 90px 0 75px 0;
+    }
+
+    #serviciosIndex p,
+    #secProyectos p {
+        font-size: 20px;
+        line-height: 44px;
+        margin-bottom: 75px;
+    }
+
+    .columna img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .titServicio {
+        width: 250px;
+        height: 300px;
+    }
+
+    .columna div h2 {
+        font-size: 35px;
+    }
+
+    .columna {
+        margin: 0 75px;
+    }
+
+    .accion p {
+        width: 710px;
+        margin-bottom: 40px !important;
+    }
+
+    .btn-primary {
+        padding: 13px 40px;
+        font-size: 17px;
+    }
+
+    footer p {
+        font-size: 13px;
+        width: 265px;
+        margin-bottom: 0;
+    }
+
+    footer ul li {
+        font-size: 13px;
+    }
+
+    .redes {
+        width: 19px;
+    }
+
+}
+
+/* ************************************ Celular ******************************************** */
+
+@media (max-width: 768px) {
+    header{
+        height:50vh;
+    }
+
+    video{
+        height:50vh;
+        width: auto;
+    }
+
+    #tituloPrincipal p {
+        font-size: 16px;
+        width: 320px;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 420px) {
+    
+}
