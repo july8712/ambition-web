@@ -950,6 +950,10 @@ footer ul li{
         overflow: hidden;
     }
 
+    .navbar {
+        background-color: #090909;
+    }
+
     video{
         height:50vh;
         width: auto;
@@ -1008,6 +1012,10 @@ footer ul li{
         margin-bottom: 15px;
     }
 
+    .btn-primary{
+        text-align: center;
+    }
+
     footer {
         padding: 60px 0 40px 0;
     }
@@ -1041,12 +1049,16 @@ footer ul li{
         width:80%;
     }
 
-    .navbar {
-        background-color: #090909;
-    }
-
     .logo {
         width: 60px;
         height: 60px;
+    }
+
+    .columna{
+        margin: 0;
+    }
+
+    .btn-primary{
+        padding: 13px 35px;
     }
 }
