@@ -678,6 +678,11 @@ form div:first-child{
     /* width: 100%; */
 }
 
+.contConsulta{
+    display: flex;
+    flex-direction: column;
+}
+
 input[type="text"], input[type="email"]{
     width: 100%;
 }
@@ -883,6 +888,19 @@ footer ul li{
     .imgContacto{
         display:none;
     }
+
+    #secContacto .contConsulta {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .contColumnas{
+        width:100%;
+    }
+
+    /* .columnaForm, .contConsulta{
+        width: 80%!important;
+    } */
 }
 
 @media (max-width: 1024px) {
@@ -971,6 +989,8 @@ footer ul li{
     .contColumnas{
         gap: 20px;
     }
+
+        
 }
 
 /* ************************************ Celular ******************************************** */
@@ -1071,7 +1091,7 @@ footer ul li{
 
         flex-direction: column !important;
         align-items: center;
-
+        width: 80%;
     }
 
     #secContacto h2 {
@@ -1102,6 +1122,12 @@ footer ul li{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    form div:nth-child(1){
+        display: flex;
+        justify-content:center;
+        width: 100%;
     }
 
     .envio{
@@ -1159,7 +1185,7 @@ footer ul li{
     #tituloPrincipal.dobleLinea {
         top: 179px;
     }
-    
+
     #secContacto h2 {
         font-size: 38px;
     }
@@ -1178,5 +1204,9 @@ footer ul li{
 
     .asesoria div:nth-child(2) {
         padding-left: 0px;
+    }
+
+    .columnaForm, .contConsulta{
+        width: 80%!important;
     }
 }
