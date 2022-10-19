@@ -804,6 +804,10 @@ footer ul li{
         width: 700px;
     }
 
+    #tituloPrincipal.dobleLinea{
+        top: 134px;
+    }
+
     #serviciosIndex, #secProyectos, #secServicios, #secNosotros, #secContacto{
         padding: 120px 0 75px 0;
     }
@@ -874,6 +878,11 @@ footer ul li{
         height: 60px;
     }
 
+    /* sección contacto */
+
+    .imgContacto{
+        display:none;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -957,6 +966,11 @@ footer ul li{
         height: 60px !important;
     }
 
+    /* Sección contacto */
+
+    .contColumnas{
+        gap: 20px;
+    }
 }
 
 /* ************************************ Celular ******************************************** */
@@ -1042,6 +1056,62 @@ footer ul li{
         font-size: 16px;
         width: 316px;
     }
+
+    /* sección contacto */
+
+    .dobleLinea h1{
+        font-size: 42px;
+    }
+
+    #tituloPrincipal.dobleLinea {
+        top: 166px;
+    }
+
+    .contColumnas {
+
+        flex-direction: column !important;
+        align-items: center;
+
+    }
+
+    #secContacto h2 {
+        text-align: center;
+    }
+
+    .columnaForm{
+        width: 100%;
+    }
+
+    .consulta{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .consulta div{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .asesoria{
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .envio{
+        width: 80%;
+        justify-content: flex-end;
+    }
+
+    input[type="text"]{
+        margin-top: 15px;
+    }
 }
 
 
@@ -1078,5 +1148,35 @@ footer ul li{
 
     .btn-primary{
         padding: 13px 35px;
+    }
+
+    /* seccion contacto */
+
+    .dobleLinea h1 {
+        font-size: 32px;
+    }
+
+    #tituloPrincipal.dobleLinea {
+        top: 179px;
+    }
+    
+    #secContacto h2 {
+        font-size: 38px;
+    }
+    
+    .columnaForm{
+        width: 80%;
+    }
+
+    .asesoria{
+        flex-direction: column;
+    }
+
+    .asesoria div{
+        width: 100%;
+    }
+
+    .asesoria div:nth-child(2) {
+        padding-left: 0px;
     }
 }
