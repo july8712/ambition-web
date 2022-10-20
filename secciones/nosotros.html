@@ -24,11 +24,11 @@
                             <img src="../assets/img/logo.png" width="70" height="70"alt="Logo Ambition" class="logo logo-grande">
                             <img src="../assets/img/logo_chico.png" width="70" height="70"alt="Logo Ambition" class="logo logo-chico">
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
                     </div>
-                    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
@@ -43,7 +43,7 @@
                                 <a class="nav-link active" href="#">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
+                                <a class="nav-link" href="contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -53,7 +53,7 @@
         <video src="../assets/videos/02.mp4" type="video/mp4" autoplay loop="true" width="1920" height="890" poster="../assets/img/video2.jpg" muted>
             <!-- Tu navegador no admite el elemento <code>video</code>. -->
         </video>
-        <div id="tituloPrincipal">
+        <div id="tituloPrincipal" class="dobleLinea">
             <h1>Hola, somos<br>Ambition</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
         </div>
@@ -110,26 +110,65 @@
         <div class="integrantes">
             <h3>Mirá quienes somos</h3>
             <div class="contIntegrantes">
-                <img src="../assets/img/flor.png" alt="Florencia">
-                <img src="../assets/img/nahuel.jpg" alt="Nahuel Gramajo">
-                <img src="../assets/img/thanya.png" alt="Thanya Mealla">
-                <img src="../assets/img/july.jpg" alt="Julieta Bondi">
-                <img src="../assets/img/juan.jpg" alt="Juan Montiel">
-                <img src="../assets/img/nico.jpg" alt="Nicolás Brava">
+                <div class="integrante">
+                    <img src="../assets/img/thanya.png" alt="Thanya Mealla">
+                    <h4>Thanya Mealla<span>CTO<br>Desarrolladora Web<br>Full Stack<br>Social Media Manager</span></h4>
+                </div>
+                <div class="integrante">
+                    <img src="../assets/img/july.jpg" alt="Julieta Bondi">
+                    <h4>Julieta Bondi<span>Desarrolladora<br>Front-End</span></h4>
+                </div>
+                <div class="integrante">
+                    <img src="../assets/img/flor.png" alt="Florencia Molinas">
+                    <h4>Florencia Molinas<span>Diseñadora Gráfica<br>UX-UI</span></h4>
+                </div>
+                <div class="integrante">
+                    <img src="../assets/img/nahuel.jpg" alt="Nahuel Gramajo">
+                    <h4>Nahuel Gramajo<span>Desarrollador<br>Front-End</span></h4>
+                </div>
+                <div class="integrante">
+                    <img src="../assets/img/nico.jpg" alt="Nicolás Bava">
+                    <h4>Nicolás Bava<span>Desarrollador Web<br>Full Stack</span></h4>
+                </div>
+                <div class="integrante">
+                    <img src="../assets/img/juan.jpg" alt="Juan Montiel">
+                    <h4>Juan Montiel<span>Diseñador UX-UI<br>Diseñador Web</span></h4>
+                </div>
             </div>
         </div>
+
+        <div class="clientes">
+            <div class="contClientes">
+                <h3>Algunos clientes</h3>
+                <div class="galeriaClientes">
+                    <img src="../assets/img/cli1.png" alt="">
+                    <img src="../assets/img/cli2.png" alt="">
+                    <img src="../assets/img/cli3.png" alt="">
+                    <img src="../assets/img/cli4.png" alt="">
+                    <img src="../assets/img/cli5.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor accion">
+          <p>¿Necesitas asesoría?<span>¡charlemos!</span></p>  
+          <a href="#" class="btn-primary">Conversar</a>
+        </div>
+
     </section>
 
-        <footer>
+
+
+    <footer>
         <div class="contenedor">
             <img src="../assets/img/logo_blanco.png" alt="Logo Ambition">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
             <ul>
-                <li><img src="assets/img/WhatsApp.png" alt="WhatsApp" class="redes"> +54 351 1234567</li>
-                <li><img src="assets/img/facebook.png" alt="Facebook" class="redes"> @ambtionagencia</li>
-                <li><img src="assets/img/Instagram.png" alt="Instagram" class="redes">@ambitionagenciamkt</li>
-                <li><img src="assets/img/linkedin.svg" alt="Linkedin" class="redes">@ambitionagenciamkt</li>
-                <li><img src="assets/img/mail.png" alt="Email" class="redes">@ambitionagenciamkt</li>
+                <li><img src="../assets/img/iconos/tel.png" alt="WhatsApp" class="redes"> +54 351 1234567</li>
+                <li><img src="../assets/img/iconos/Facebook.png" alt="Facebook" class="redes">@ambtionagencia</li>
+                <li><img src="../assets/img/iconos/Instagram.png" alt="Instagram" class="redes">@ambitionagenciamkt</li>
+                <li><img src="../assets/img/iconos/linkedin.png" alt="Linkedin" class="redes">@ambitionagenciamkt</li>
+                <li><img src="../assets/img/iconos/mail.png" alt="Email" class="redes">@ambitionagenciamkt</li>
             </ul> 
         </div>
 

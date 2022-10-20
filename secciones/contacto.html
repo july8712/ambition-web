@@ -24,6 +24,8 @@
     
 
     <title>Contacto | Ambition</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Nosotros | Ambition</title>
 </head>
 <body>
     <header>
@@ -40,6 +42,11 @@
                         </button>
                     </div>
                     <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
@@ -54,6 +61,9 @@
                                 <a class="nav-link active" href="#">Nosotros</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item active">
                                 <a class="nav-link" href="#">Contacto</a>
                             </li>
                         </ul>
@@ -65,45 +75,73 @@
         
     </header>
 
-    <section id="secContacto" >
-        <div class="contenedor">
-            <h3>Consultanos:</h3>
-            <form onsubmit="sendEmail(event)" action="#" id="contact-form" class="contact-form">
-                <p><label for="name">Nombre:</label> </p>
-                <p><input name="name" onchange="writeData()" id="name" type="text"  placeholder="ej: Maria Ruiz"></p> 
-     
-                <p><label for="phone">Celular:</label></p>
-                <p><input name="phone" onchange="writeData()" id="phone" type="text" placeholder="ej: +5493445588616"></p> 
-
-                <p><label for="email">Correo electrónico:</label></p>
-                <p><input name="email" onchange="writeData()" type="email" id="email" placeholder="ej: maria-ruiz@email.com"></p>
-
-                <p><label for="type">Buscas asesoria en:</label></p>
-                <p>
-                   <div>
-                       <label><input type="checkbox" onclick="writeCheckboxBrand()" name="brandDesign" id="checkboxBrand">Diseño de marca</label>
-                       <label><input type="checkbox" onclick="writeCheckboxUX()" name="brandDesign" id="checkboxUX">Diseño UX/UI</label>
+        <video src="../assets/videos/01.mp4" type="video/mp4" autoplay loop="true" width="1920" height="890" poster="../assets/img/fondo.png" muted>
+            <!-- Tu navegador no admite el elemento <code>video</code>. -->
+        </video>
+        <div id="tituloPrincipal" class="dobleLinea">
+            <h1>Estamos<br>para ayudarte</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
+        </div>
+    </header>
+    <main>
+        <section id="secContacto">
+            <div>
+                <div class="contFormulario">
+                    <div>
+                        <h2>Completá el formulario</h2>
                     </div>
                     <div>
-                        <label><input type="checkbox" name="brandDesign" id="">Redes sociales</label>
-                        <label><input type="checkbox" name="brandDesign" id="">Manifiesto</label>
+                        <form onsubmit="sendEmail(event)" action="#" id="contact-form" class="contact-form">
+                            <div>
+                                <div class="contColumnas">
+                                    <div class="columnaForm">
+                                        <label for="name" id="nameLabel">Nombre</label>
+                                        <input type="text" value="" onfocusout="writeName()" onchange="writeName()" placeholder="Nombre name" id="name" name="name" class="">
+
+                                        <label for="phone" id="phoneLabel">Celular</label>
+                                        <input type="text" value="" onfocusout="writePhone()" onchange="writeData()" placeholder="541112345678" id="phone" name="phone">
+                                    </div> 
+
+                                    <div class="columnaForm">
+                                        <label for="email" id="emailLabel">Correo Electrónico</label>
+                                        <input type="email" onfocusout="writeEmail()"  onchange="writeData()" placeholder="tudireccion@email.com" id="email" name="email" value="">
+                                        
+                                        <label for="asesoria">Búscas asesoría en:</label>
+                                        <div class="asesoria">
+                                            <div>
+                                                <label><input type="checkbox" name="brandDesign"  onclick="writeCheckboxBrand()" value=""  id="checkboxBrand" >Diseño de marca</label>
+                                                <label><input type="checkbox" onclick="writeCheckboxRRSS()" value="" name="rrss" id="checkboxRRSS">Redes Sociales</label>
+                                                <label class="check"><input type="checkbox" name="app" id="checkboxApp"  onclick="writeCheckboxApp()" value="">Diseño de app</label>
+                                            </div>
+                                            <div>
+                                                <label class="check"><input type="checkbox" name="checkboxUX" id="checkboxUX" onclick="writeCheckboxUX()" value="">Diseño UX/UI</label>
+                                                <label class="check"><input type="checkbox" name="checkboxManifiesto" id="checkboxManifiesto" onclick="writeCheckboxManifiesto()">Manifiesto</label>
+                                                <label class="check"><input type="checkbox" name="checkboxId" id="checkboxId" value="" onclick="writeCheckboxIdCurrentValue()">Identidades</label>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="consulta">
+                                <div class="contConsulta">
+                                    <label for="consulta" id="messageLabel">Contanos sobre tu proyecto</label>
+                                    <textarea onkeypress="writeData()" onfocusout="writeMessage()" name="message" id="message" cols="30" rows="10" placeholder="Tengo un emprendimiento de..."></textarea>
+                                </div>
+                            </div>
+                            <div class="envio">
+                                <button  class="btn-primary">Enviar</button>
+                            </div>
+                        </form>
                     </div>
-                    <div>
-                        <label><input type="checkbox" name="brandDesign" id="">Diseño de app</label>
-                        <label><input type="checkbox" name="brandDesign" id="">Identidades</label>
-                   </div>
-                </p>
+                </div>
+                <div class="imgContacto">
+                </div>
+                <!-- <img src="../assets/img/7.png" alt=""> -->
+            </div>
+        </section>
+    </main>
 
-
-                <p><label for="message">Contanos sobre tu proyecto:</label></p>
-                <p><textarea name="message"  id="message" onkeypress="writeData()"  cols="25" rows="10" placeholder="Escribe tu mensaje"></textarea></p>
-               
-                <button> Send </button>
-            </form>
-        </div>  
-    </section>
-
-        <footer>
+    <footer>
         <div class="contenedor">
             <img src="../assets/img/logo_blanco.png" alt="Logo Ambition">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
@@ -113,6 +151,11 @@
                 <li><img src="assets/img/Instagram.png" alt="Instagram" class="redes">@ambitionagenciamkt</li>
                 <li><img src="assets/img/linkedin.svg" alt="Linkedin" class="redes">@ambitionagenciamkt</li>
                 <li><img src="assets/img/mail.png" alt="Email" class="redes">@ambitionagenciamkt</li> -->
+                <li><img src="../assets/img/iconos/tel.png" alt="WhatsApp" class="redes"> +54 351 1234567</li>
+                <li><img src="../assets/img/iconos/Facebook.png" alt="Facebook" class="redes"> @ambtionagencia</li>
+                <li><img src="../assets/img/iconos/Instagram.png" alt="Instagram" class="redes">@ambitionagenciamkt</li>
+                <li><img src="../assets/img/iconos/linkedin.png" alt="Linkedin" class="redes">@ambitionagenciamkt</li>
+                <li><img src="../assets/img/iconos/mail.png" alt="Email" class="redes">@ambitionagenciamkt</li>
             </ul> 
         </div>
 

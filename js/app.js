@@ -9,6 +9,7 @@ window.addEventListener("scroll", function() {
    nav.classList.toggle("oscurecer", scrollY>0);
 })
 
+
 let cardProyecto = document.querySelector(".cardProyecto");
 
 const proyectos = document.querySelectorAll(".cardProyecto");

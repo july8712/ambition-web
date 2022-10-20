@@ -80,14 +80,29 @@ header{
     padding: 30px 0;
     width: 80%;
     transition: 0.7s;
+    z-index: 1;
 }
 
 .navbar-brand {
     padding-bottom: 0 !important;
     display: inline-block;
     position: relative;
-    min-height: 70px;
-    min-width: 70px;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.navbar-dark .navbar-toggler,
+.navbar-dark .navbar-toggler:focus {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-collapse {
+    width: 90%;
+    text-align: right;
+    margin-top: 10px;
+    padding: 10px 30px;
 }
 
 .contenedor-nav{
@@ -95,6 +110,7 @@ header{
     justify-content:space-between;
     width: 80%;
     transition: 0.7s;
+    flex-wrap: wrap;
 }
 
 nav .container-fluid{
@@ -153,7 +169,7 @@ video{
     margin-bottom:123px;
 }
 
-#serviciosIndex, #secProyectos, #secServicios, #secNosotros{
+#serviciosIndex, #secProyectos, #secServicios, #secNosotros, #secContacto {
     width: 100%;
     background: linear-gradient(180deg, #1F1F1F 0%, #000000 42.3%, #1F1F1F 100%);
     display: flex;
@@ -196,6 +212,10 @@ video{
 .servIndex{
     display: flex;
     margin-bottom: 200px;
+}
+
+.servIndexMobile{
+    display: none;
 }
 
 .columna{
@@ -265,7 +285,7 @@ video{
     margin-bottom:60px !important;
 }
 
-.accion a{
+.btn-primary{
     background: #621E7E;
     border-radius: 56px;
     padding: 15px 50px;
@@ -277,7 +297,7 @@ video{
     text-decoration: none;
 }
 
-.accion a:hover{
+.btn-primary:hover{
     background: #853BA6;;
 }
 
@@ -515,8 +535,23 @@ video{
     flex-wrap: wrap;
 }
 
+.integrantes{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 110px;
+}
+
+.integrantes h3{
+    font-weight: 800;
+    font-size: 46px;
+    margin-bottom: 150px;
+}
+
 .contIntegrantes{
     display: flex;
+    gap: 50px;
 }
 
 .contIntegrantes img{
@@ -526,39 +561,214 @@ video{
 
 }
 
-/******************************************** Contacto ***************************************/
-
-#secContacto {
-    height: 100%;
-    background-color: #621E7E;
-    /* padding-top: 40vh; */
-        /* width: 100%;
-    height: 100%; */
-    padding-top: 30vh;
-
-}
-
-#secContacto .contenedor {
+.integrante{
     display: flex;
-    margin: auto auto;;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /* width: 100%;
-    height: 100%; */
-    background-color: #1F1F1F;
-    width: 40%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+}
+
+.integrante h4{
+    text-align: center;
+    width: 250px;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+
+.integrante h4 span{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.clientes{
+    background: #621E7E;
+    width: 100%;
+}
+
+.contClientes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.galeriaClientes{
+    display: flex;
+    width: 80%;
+    justify-content:space-between;
+    padding: 50px;
+}
+
+.contClientes h3{
+    font-weight: 800;
+    font-size: 46px;
+}
+
+.galeriaClientes img{
+    height:47px;
+}
+
+#secNosotros .accion{
+    padding: 200px 0 100px 0;
+}
+
+#secNosotros .accion p{
+    font-weight: 800;
+    font-size: 46px;
+    letter-spacing: -0.005em;
+}
+
+#secNosotros .accion p span{
+    color: #962BC2;
+    margin-left: 10px;
+}
+
+
+/* ***************************************** Sección contacto ******************************** */
+
+/* .secContacto{
+    display: flex;
+} */
+
+.asesoria{
+    display: flex;
+    width: 316px;
+}
+
+.asesoria div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.asesoria div:nth-child(2){
+    padding-left:30px;
+}
+
+form div:first-child{
+    display: flex;
+}
+
+.columnaForm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#secContacto{
+    width: 100%;
+    display: flex;
+    flex-direction: row ;
+    justify-content:center;
+    padding: 168px 0;
+}
+
+#secContacto div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgContacto{
+    width: 870px;
+    border-radius:30px;
+    margin-left: 50px;
+    background-image: url(../assets/img/7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#secContacto h2{
+    font-weight: 800;
+    font-size: 46px;
+}
+
+.contFormulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.contFormulario div:first-child{
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 100%; */
+}
+
+.contConsulta{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="email"]{
+    width: 100%;
+}
+
+input[type="email"]{
+    margin:15px 0;
+}
+
+input, textarea{
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+textarea{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.consulta{
+    margin-top:25px;
+}
+
+form div:first-child{
+    display: flex;
+}
+
+.contColumnas{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+
+.check{
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+label{
+    margin-top: 10px;
+    color: #C23FF9;
+}
+
+.asesoria label{
     color: white;
-
+    font-size: 14px;
 }
 
-.contenedor h3 {
-    margin-bottom: 1rem;
+input[type="checkbox"]{
+    margin-right: 10px;
 }
 
+.envio{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
 
+.error {
+    color: red;
+    outline: red solid 4px;    
+}
+
+.errorLabel {
+    color: red;
+}
 /******************************************** Footer ***************************************/
 
 footer{
@@ -593,3 +803,438 @@ footer ul li{
     margin-right: 10px;
 }
 
+
+
+
+/* ************************************ Tablet ********************************************* */
+
+@media (max-width: 1280px) {
+
+    .contenedor-nav{
+        width: 90%;
+    }
+    
+    .nav-item{
+        font-size:20px;
+        margin-left: 20px;
+    }
+
+    .logo{
+        width:90px;
+        height: 90px;
+    }
+
+    h1{
+        font-size:75px;
+    }
+
+    #tituloPrincipal{
+        top: 195px;
+    }
+
+    #tituloPrincipal p {
+        font-size: 25px;
+        width: 700px;
+    }
+
+    #tituloPrincipal.dobleLinea{
+        top: 134px;
+    }
+
+    #serviciosIndex, #secProyectos, #secServicios, #secNosotros, #secContacto{
+        padding: 120px 0 75px 0;
+    }
+
+    .servIndex {
+        margin-bottom: 111px;
+    }
+
+    #serviciosIndex p, #secProyectos p {
+        font-size: 26px;
+        line-height: 44px;
+        margin-bottom: 106px;
+    }
+
+    .linea {
+        width: 35px;
+    }
+
+    .linea span {
+        width: 95px;
+        height: 95px;
+    }
+
+    .columna img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .titServicio {
+        width: 350px;
+        height: 400px;
+    }
+
+    .columna div h2 {
+        font-size: 50px;
+    }
+
+    .columna {
+        margin: 0 100px;
+    }
+
+    .contenedor {
+        width: 90%;
+    }
+
+    .logo_footer{
+        width: 125px;
+    }
+
+    footer{
+        padding: 40px 0;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+    ol,ul {
+        padding-left: 0;
+    }
+
+    dl,ol,ul {
+        margin-bottom: 0;
+    }
+
+    .logo{
+        width:60px;
+        height: 60px;
+    }
+
+    /* sección contacto */
+
+    .imgContacto{
+        display:none;
+    }
+
+    #secContacto .contConsulta {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .contColumnas{
+        width:100%;
+    }
+
+    /* .columnaForm, .contConsulta{
+        width: 80%!important;
+    } */
+}
+
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 54px;
+    }
+
+    #tituloPrincipal {
+        top: 122px;
+    }
+
+    #tituloPrincipal p {
+        font-size: 18px;
+        width: 513px;
+    }
+
+    #serviciosIndex,#secProyectos,#secServicios,#secNosotros,#secContacto {
+        padding: 90px 0 75px 0;
+    }
+
+    #serviciosIndex p,
+    #secProyectos p {
+        font-size: 20px;
+        line-height: 44px;
+        margin-bottom: 75px;
+    }
+
+    .columna img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .titServicio {
+        width: 250px;
+        height: 300px;
+    }
+
+    .columna div h2 {
+        font-size: 35px;
+    }
+
+    .columna {
+        margin: 0 75px;
+    }
+
+    .accion p {
+        width: 710px;
+        margin-bottom: 40px !important;
+    }
+
+    .btn-primary {
+        padding: 13px 40px;
+        font-size: 17px;
+    }
+
+    footer p {
+        font-size: 13px;
+        width: 265px;
+        margin-bottom: 0;
+    }
+
+    footer ul li {
+        font-size: 13px;
+    }
+
+    .redes {
+        width: 19px;
+    }
+
+    .navbar {
+        background-color: #090909;
+    }
+
+    .oscurecer{
+        padding: 30px 0 !important;
+    }
+
+    .oscurecer .logo{
+        width:60px !important;
+        height: 60px !important;
+    }
+
+    /* Sección contacto */
+
+    .contColumnas{
+        gap: 20px;
+    }
+
+        
+}
+
+/* ************************************ Celular ******************************************** */
+
+@media (max-width: 768px) {
+    header {
+        height: 50vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .navbar {
+        background-color: #090909;
+    }
+
+    video{
+        height:50vh;
+        width: auto;
+    }
+
+    #tituloPrincipal {
+        top: 168px;
+    }
+
+    #tituloPrincipal p {
+        font-size: 16px;
+        width: 320px;
+        margin: auto;
+    }
+
+    .servIndex{
+        display: none;
+    }
+
+    .titServicio {
+        height: 213px;
+    }
+
+    .servIndexMobile{
+        display: flex;
+    }
+
+    .accion p {
+        width: 373px;
+        margin-bottom: 40px !important;
+    }
+
+    .columna div h2 {
+        text-align: center;
+    }
+
+    footer .contenedor {
+        flex-direction: column;
+    }
+
+    .logo_footer, footer p{
+        margin-bottom:40px;
+    }
+
+    footer ul li {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .redes{
+        width: 30px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .btn-primary{
+        text-align: center;
+    }
+
+    footer {
+        padding: 60px 0 40px 0;
+    }
+
+    footer p {
+        font-size: 16px;
+        width: 316px;
+    }
+
+    /* sección contacto */
+
+    .dobleLinea h1{
+        font-size: 42px;
+    }
+
+    #tituloPrincipal.dobleLinea {
+        top: 166px;
+    }
+
+    .contColumnas {
+
+        flex-direction: column !important;
+        align-items: center;
+        width: 80%;
+    }
+
+    #secContacto h2 {
+        text-align: center;
+    }
+
+    .columnaForm{
+        width: 100%;
+    }
+
+    .consulta{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .consulta div{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .asesoria{
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form div:nth-child(1){
+        display: flex;
+        justify-content:center;
+        width: 100%;
+    }
+
+    .envio{
+        width: 80%;
+        justify-content: flex-end;
+    }
+
+    input[type="text"]{
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    #tituloPrincipal p {
+        font-size: 14px;
+        width: 269px;
+    }
+
+    #serviciosIndex p,
+    #secProyectos p {
+        font-size: 15px;
+        line-height: 35px;
+        /* margin-bottom: 75px; */
+    }
+
+    .accion p, footer p{
+        width:80%;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .columna{
+        margin: 0;
+    }
+
+    .btn-primary{
+        padding: 13px 35px;
+    }
+
+    /* seccion contacto */
+
+    .dobleLinea h1 {
+        font-size: 32px;
+    }
+
+    #tituloPrincipal.dobleLinea {
+        top: 179px;
+    }
+
+    #secContacto h2 {
+        font-size: 38px;
+    }
+    
+    .columnaForm{
+        width: 80%;
+    }
+
+    .asesoria{
+        flex-direction: column;
+    }
+
+    .asesoria div{
+        width: 100%;
+    }
+
+    .asesoria div:nth-child(2) {
+        padding-left: 0px;
+    }
+
+    .columnaForm, .contConsulta{
+        width: 80%!important;
+    }
+}
