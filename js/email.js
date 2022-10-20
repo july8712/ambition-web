@@ -26,6 +26,12 @@ window.addEventListener("load", function(event) {
     const phoneLabel = document.querySelector('#phoneLabel')
     const messageLabel = document.querySelector('#messageLabel')
 
+    // Small Error Selectors
+    const nameError = document.querySelector('#nameError')
+    const emailError = document.querySelector('#emailError')
+    const phoneError = document.querySelector('#phoneError')
+    const messageError = document.querySelector('#messageError')
+
     // Input Values    
     let nameCurrentValue = name.value
     let emailCurrentValue = email.value
@@ -45,11 +51,13 @@ window.addEventListener("load", function(event) {
         if( nameCurrentValue.length > 0) {
             name.classList.remove('error')
             nameLabel.classList.remove('errorLabel')
+            nameError.classList.remove('smallErrorShow')
         }
 
         if( nameCurrentValue.length === 0) {
             name.classList.add('error')
             nameLabel.classList.add('errorLabel')
+            nameError.classList.add('smallErrorShow')
         }
     }
 
@@ -58,11 +66,14 @@ window.addEventListener("load", function(event) {
         if( phoneCurrentValue.length > 0) {
             phone.classList.remove('error')
             phoneLabel.classList.remove('errorLabel')
+            phoneError.classList.remove('smallErrorShow')
+
         }
 
         if( phoneCurrentValue.length === 0) {
             phone.classList.add('error')
             phoneLabel.classList.add('errorLabel')
+            phoneError.classList.add('smallErrorShow')
         }
     }
 
@@ -71,11 +82,15 @@ window.addEventListener("load", function(event) {
         if( emailCurrentValue.length > 0) {
             email.classList.remove('error')
             emailLabel.classList.remove('errorLabel')
+            emailError.classList.remove('smallErrorShow')
+
         }
 
         if( emailCurrentValue.length === 0) {
             email.classList.add('error')
             emailLabel.classList.add('errorLabel')
+            emailError.classList.add('smallErrorShow')
+
         }
     }
 
@@ -84,11 +99,13 @@ window.addEventListener("load", function(event) {
         if( messageCurrentValue.length > 0) {
             message.classList.remove('error')
             messageLabel.classList.remove('errorLabel')
+            messageError.classList.remove('smallErrorShow')
         }
 
         if( messageCurrentValue.length === 0) {
             message.classList.add('error')
             messageLabel.classList.add('errorLabel')
+            messageError.classList.add('smallErrorShow')
         }
     }
 

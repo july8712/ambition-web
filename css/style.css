@@ -663,7 +663,7 @@ form div:first-child{
     display: flex;
     flex-direction: row ;
     justify-content:center;
-    padding: 168px 0;
+    padding: 168px;
 }
 
 #secContacto div:first-child{
@@ -769,6 +769,17 @@ input[type="checkbox"]{
 .errorLabel {
     color: red;
 }
+
+.smallError{
+    color: red;
+    opacity: 0;
+}
+
+.smallErrorShow{
+    opacity: 1;
+}
+
+
 /******************************************** Footer ***************************************/
 
 footer{
