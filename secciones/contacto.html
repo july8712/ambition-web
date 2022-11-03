@@ -17,12 +17,6 @@
     <script type="text/javascript" src="../js/email.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         
-
-        
-       
-        
-    
-
     <title>Contacto | Ambition</title>
     <link rel="stylesheet" href="../css/style.css">
     <title>Nosotros | Ambition</title>
@@ -86,18 +80,18 @@
                                     <div class="columnaForm">
                                         <label for="name" id="nameLabel">Nombre</label>
                                         <input type="text" value="" onfocusout="writeName()" onchange="writeName()" placeholder="Nombre name" id="name" name="name" class="">
-                                        <small class="smallError" id="nameError">Te olvidaste de completar el campo de nombre la concha de tu madre</small>
+                                        <small class="smallError" id="nameError">Por favor completa este campo con tu Nombre completo.</small>
 
                                         <label for="phone" id="phoneLabel">Celular</label>
                                         <input type="text" value="" onfocusout="writePhone()" onchange="writeData()" placeholder="541112345678" id="phone" name="phone">
-                                        <small class="smallError" id="phoneError">Ok, te mando una paloma mensajera te parece???</small>
+                                        <small class="smallError" id="phoneError">Campo obligatorio</small>
                                     
                                     </div> 
 
                                     <div class="columnaForm">
                                         <label for="email" id="emailLabel">Correo Electrónico</label>
                                         <input type="email" onfocusout="writeEmail()"  onchange="writeData()" placeholder="tudireccion@email.com" id="email" name="email" value="">
-                                        <small class="smallError" id="emailError">Date una vueltita la semana que viene sino en vez de dejar el mail, capx.</small>
+                                        <small class="smallError" id="emailError">Campo obligatorio</small>
                                         
 
                                         <label for="asesoria">Búscas asesoría en:</label>
@@ -119,9 +113,9 @@
                             <div class="consulta">
                                 <div class="contConsulta">
                                     <label for="consulta" id="messageLabel">Contanos sobre tu proyecto</label>
-                                    <small class="smallError" id="messageError">Mortal, servicio de telepatia agregale al presupuesto, como queres que sepa que te pasa hermanx??</small>
                                     <textarea onkeypress="writeData()" onfocusout="writeMessage()" name="message" id="message" cols="30" rows="10" placeholder="Tengo un emprendimiento de..."></textarea>
-
+                                    <small class="smallError" id="messageError">Completa este campo</small>
+                                    
                                 </div>
                             </div>
                             <div class="envio">
