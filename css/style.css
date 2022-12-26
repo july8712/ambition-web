@@ -80,7 +80,7 @@ header{
     padding: 30px 0;
     width: 80%;
     transition: 0.7s;
-    z-index: 1;
+    z-index: 100;
 }
 
 .navbar-brand {
@@ -149,6 +149,10 @@ video{
     top: 344px;
     margin: auto;
     color: #fff;
+}
+
+#tituloPrincipal.dobleLinea{
+    top: 280px;
 }
 
 #tituloPrincipal p{
@@ -308,7 +312,7 @@ video{
     flex-wrap: wrap;
     gap: 100px;
     width: 90%;
-    justify-content:space-between;
+    justify-content:center;
 }
 
 #secProyectos .accion{
@@ -319,8 +323,10 @@ video{
 
 .cardProyecto {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
@@ -815,6 +821,21 @@ footer ul li{
 }
 
 
+@media (max-width: 1440px) {
+
+    .imgContacto {
+        width: 700px;
+    }
+
+    #tituloPrincipal.dobleLinea {
+        top: 188px;
+    }
+
+    #tituloPrincipal {
+        top: 238px;
+    }
+}
+
 
 
 /* ************************************ Tablet ********************************************* */
@@ -940,6 +961,17 @@ footer ul li{
     /* .columnaForm, .contConsulta{
         width: 80%!important;
     } */
+
+    /* Sección Proyectos */
+
+    #secProyectos .contenedor{
+        justify-content:center;
+    }
+
+    .cardProyecto {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1177,6 +1209,10 @@ footer ul li{
     input[type="text"]{
         margin-top: 15px;
     }
+
+    .contFormulario{
+        padding:0 30px;
+    }
 }
 
 
@@ -1184,6 +1220,10 @@ footer ul li{
     
     h1 {
         font-size: 40px;
+    }
+
+    header{
+        padding: 0 10px;
     }
 
     #tituloPrincipal p {
@@ -1221,6 +1261,10 @@ footer ul li{
         font-size: 32px;
     }
 
+    .contFormulario {
+        padding: 0 10px;
+    }
+
     #tituloPrincipal.dobleLinea {
         top: 179px;
     }
@@ -1247,5 +1291,17 @@ footer ul li{
 
     .columnaForm, .contConsulta{
         width: 80%!important;
+    }
+
+    /* Sección Proyectos */
+
+    #secProyectos .contenedor{
+        gap: 40px;
+    }
+
+    .cardProyecto {
+        position: relative;
+        width: 250px;
+        height: 250px;
     }
 }
