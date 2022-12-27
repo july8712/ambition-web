@@ -373,7 +373,7 @@ video{
 /* ************************************ Sección Servicios ***********************************/
 
 #secServicios .contenedor{
-    width: 70% !important;;
+    width: 100%;
 }
 
 /* #secServicios .violeta {
@@ -848,6 +848,7 @@ footer ul li{
     .servicio {
         display: flex;
         justify-content:space-around;
+        width: 90%;
     }
 
    
