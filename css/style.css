@@ -373,6 +373,7 @@ video{
 /* ************************************ Sección Servicios ***********************************/
 
 #secServicios .contenedor{
+    padding:100px 0;
     width: 100%;
 }
 
@@ -404,6 +405,11 @@ video{
     padding: 0;
 }
 
+.servicio{
+    padding: 100px 0;
+    overflow: hidden;
+}
+
 .tituloSecServicio{
     display: flex;
     justify-content:center;
@@ -412,22 +418,17 @@ video{
 
 .tituloSecServicio h2{
     font-weight: 800;
-    font-size: 64px;
+    text-align: center;
+    font-size: 32px;
     letter-spacing: -0.005em;
 }
-
-.servicio{
-    padding: 100px 0;
-}
-
 
 .violeta {
     background-color: #53196B;
 }
-
+/* 
 .gris{
-    padding:100px 0;
-}
+} */
 
 .descripcionServ{
     width: 560px;
