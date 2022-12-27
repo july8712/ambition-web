@@ -714,16 +714,19 @@ form div:first-child{
 
 input[type="text"], input[type="email"]{
     width: 100%;
+    color: #C23FF9;
 }
 
 input[type="email"]{
     margin:15px 0;
+    color: #C23FF9;
 }
 
 input, textarea{
     border: 1px solid #FFFFFF;
     border-radius: 12px;
     padding: 15px;
+    color: #C23FF9;
 }
 
 textarea{
@@ -753,7 +756,8 @@ form div:first-child{
 
 label{
     margin-top: 10px;
-    color: #C23FF9;
+    /* color: #C23FF9; */
+    color: white;
 }
 
 .asesoria label{
