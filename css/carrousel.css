@@ -1,8 +1,7 @@
-.swiper {
-    width: 490px;
+.swiper-style {
+    min-width: 300px;
     padding-top: 50px;
     padding-bottom: 50px;
-
 }
 
 .swiper-slide {

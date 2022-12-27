@@ -14,8 +14,8 @@ window.onload = (event) => {
         slideShadows: true
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        nextEl: ".swiper-button-next-1",
+        prevEl: ".swiper-button-prev-1"
       },
       noSwiping: true
     });
@@ -34,8 +34,8 @@ window.onload = (event) => {
       slideShadows: false
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".swiper-button-next-1",
+      prevEl: ".swiper-button-prev-1"
     },
     noSwiping: true
     });
@@ -54,8 +54,8 @@ window.onload = (event) => {
         slideShadows: true
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        nextEl: ".swiper-button-next-2",
+        prevEl: ".swiper-button-prev-2"
       },
       noSwiping: true
     });
@@ -74,8 +74,8 @@ window.onload = (event) => {
       slideShadows: false
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".swiper-button-next-2",
+      prevEl: ".swiper-button-prev-2"
     },
     noSwiping: true
     });
@@ -95,8 +95,8 @@ window.onload = (event) => {
         slideShadows: true
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        nextEl: ".swiper-button-next-3",
+        prevEl: ".swiper-button-prev-3"
       },
       noSwiping: true
     });
@@ -115,8 +115,8 @@ window.onload = (event) => {
       slideShadows: false
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".swiper-button-next-3",
+      prevEl: ".swiper-button-prev-3"
     },
     noSwiping: true
     });
