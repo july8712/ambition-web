@@ -1,0 +1,122 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 101; /* Sit on top */
+    right: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-family: Poppins, sans-serif;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: url("https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png"), auto;
+  }
+  
+  /* Modal Content/Box */
+  #secProyectos .modal-content {
+    background-color: #000;
+    margin: auto; /* 15% from the top and centered */
+    padding: 20px 40px;
+    border-radius: 26px;
+    /* border: 1px solid #888; */
+    width: 90%; /* Could be more or less, depending on screen size */
+    color:white;
+    cursor: default;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #fff;
+    float: right;
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    right: 25px;
+    top: 6px;
+    transition: all 150ms ease;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(180, 33, 180);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /*  */
+  /* MODAL ESTILOS */
+  /*  */
+
+   .modal-content h2 {
+    margin-top: 52px;
+    text-align: left;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  #secProyectos .modal-content p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  #secProyectos .modal-content .footer {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 32px
+  }
+
+  #secProyectos .carousel .item {
+    background: #621e7e;
+  }
+  #secProyectos .carousel h2 {
+      color: #FFF;
+      text-align: center;
+      padding: 5rem 0;
+      margin: 0;
+      font-style: italic;
+      font-weight: 300;
+  }
+
+  /* #secProyectos .owl-dots {
+    display: none;
+  } */
+
+  #secProyectos .owl-theme .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    position: absolute;
+    top: 45px;
+    right: -30px;
+    left: -31px;
+  }
+
+  #secProyectos .owl-theme .owl-nav span {
+    font-size: 50px;
+    transition: all 250ms ease;
+  }
+
+
+  #secProyectos .owl-theme .owl-nav button:hover {
+    background: transparent;
+    color:#d19ae7;
+
+  }
+
+
+  @media (min-width: 630px){
+
+  }
