@@ -74,13 +74,16 @@ window.onclick = function(event) {
     event.target == modal6 
     ) {
 
-    modal.style.display = "none";
-    modal2.style.display = "none";
-    modal3.style.display = "none";
-    modal4.style.display = "none";
-    modal5.style.display = "none";
-    modal6.style.display = "none";
+    modalContent.style.display = "none";
+    modalContent2.style.display = "none";
+    modalContent3.style.display = "none";
+    modalContent4.style.display = "none";
+    modalContent5.style.display = "none";
+    modalContent6.style.display = "none";
 
 
   }
 }
+
+
+// GALLERY INSIDE MODAL PROYECTO JS

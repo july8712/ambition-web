@@ -16,8 +16,8 @@
   /* Modal Content/Box */
   #secProyectos .modal-content {
     background-color: #000;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px 40px;
     border-radius: 26px;
     /* border: 1px solid #888; */
     width: 80%; /* Could be more or less, depending on screen size */
@@ -51,7 +51,6 @@
    .modal-content h2 {
     margin-top: 52px;
     text-align: left;
-    margin-left: 43px;
     font-weight: 800;
     text-transform: uppercase;
   }
@@ -61,7 +60,6 @@
     font-size: 15px;
     line-height: 18px;
     text-align: left;
-    margin-left: 43px;
     margin-bottom: 10px;
   }
 
@@ -72,5 +70,44 @@
     margin-bottom: 10px;
     text-align: center;
     margin-left: 43px;
-    color: white
+    color: white;
+    margin-top: 10px
+  }
+
+  #secProyectos .carousel .item {
+    background: #621e7e;
+  }
+  #secProyectos .carousel h2 {
+      color: #FFF;
+      text-align: center;
+      padding: 5rem 0;
+      margin: 0;
+      font-style: italic;
+      font-weight: 300;
+  }
+
+  /* #secProyectos .owl-dots {
+    display: none;
+  } */
+
+  #secProyectos .owl-theme .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    position: absolute;
+    top: 52px;
+    width: 77vw;
+    left: -31px;
+  }
+
+  #secProyectos .owl-theme .owl-nav span {
+    font-size: 50px;
+    transition: all 250ms ease;
+  }
+
+
+  #secProyectos .owl-theme .owl-nav button:hover {
+    background: transparent;
+    color:#d19ae7;
+
   }
