@@ -2,7 +2,7 @@
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 101; /* Sit on top */
     right: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -11,27 +11,32 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     font-family: Poppins, sans-serif;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: url("https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png"), auto;
   }
   
   /* Modal Content/Box */
   #secProyectos .modal-content {
     background-color: #000;
-    margin: 5% auto; /* 15% from the top and centered */
+    margin: auto; /* 15% from the top and centered */
     padding: 20px 40px;
     border-radius: 26px;
     /* border: 1px solid #888; */
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 90%; /* Could be more or less, depending on screen size */
     color:white;
+    cursor: default;
   }
   
   /* The Close Button */
   .close {
     color: #fff;
-    float: left;
+    float: right;
     font-size: 42px;
     font-weight: 400;
     position: absolute;
-    right: 17px;
+    right: 25px;
     top: 6px;
     transition: all 150ms ease;
   }
@@ -60,7 +65,7 @@
     font-size: 15px;
     line-height: 18px;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 32px;
   }
 
   #secProyectos .modal-content .footer {
@@ -69,9 +74,8 @@
     line-height: 18px;
     margin-bottom: 10px;
     text-align: center;
-    margin-left: 43px;
     color: white;
-    margin-top: 10px
+    margin-top: 32px
   }
 
   #secProyectos .carousel .item {
@@ -95,8 +99,8 @@
     justify-content: space-between;
     z-index: 99;
     position: absolute;
-    top: 52px;
-    width: 77vw;
+    top: 45px;
+    right: -30px;
     left: -31px;
   }
 
@@ -109,5 +113,10 @@
   #secProyectos .owl-theme .owl-nav button:hover {
     background: transparent;
     color:#d19ae7;
+
+  }
+
+
+  @media (min-width: 630px){
 
   }

@@ -24,22 +24,22 @@ let span6 = document.querySelectorAll(".close")[5];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
-  modal.style.display = "block";
+  modal.style.display = "flex";
 }
 btn2.onclick = function() {
-    modal2.style.display = "block";
+    modal2.style.display = "flex";
 }
 btn3.onclick = function() {
-    modal3.style.display = "block";
+    modal3.style.display = "flex";
 }
 btn4.onclick = function() {
-    modal4.style.display = "block";
+    modal4.style.display = "flex";
 }
 btn5.onclick = function() {
-    modal5.style.display = "block";
+    modal5.style.display = "flex";
 }
 btn6.onclick = function() {
-    modal6.style.display = "block";
+    modal6.style.display = "flex";
 }
 
 
@@ -74,12 +74,12 @@ window.onclick = function(event) {
     event.target == modal6 
     ) {
 
-    modalContent.style.display = "none";
-    modalContent2.style.display = "none";
-    modalContent3.style.display = "none";
-    modalContent4.style.display = "none";
-    modalContent5.style.display = "none";
-    modalContent6.style.display = "none";
+    modal.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+    modal4.style.display = "none";
+    modal5.style.display = "none";
+    modal6.style.display = "none";
 
 
   }
