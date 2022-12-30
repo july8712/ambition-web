@@ -373,11 +373,12 @@ video{
 
 #secServicios {
     margin-bottom: 0;
-    padding: 0;
+    padding-bottom: 0;
 }
 
 #secServicios .contenedor{
     width: 100%;
+    padding:100px 0;
 }
 
 /* #secServicios .violeta {
@@ -394,6 +395,7 @@ video{
     font-weight: 400;
     font-size: 23px;
     line-height: 34px;
+    padding-top: 90px
 }
 
 #secServicios .violeta .accion a {
@@ -408,10 +410,7 @@ video{
     padding: 0;
 }
 
-#secServicios .servicioColumnReverse {
-    display: flex;
-    flex-direction: column-reverse;
-}
+
 
 .servicio{
     /* padding: 100px 0; */
@@ -1119,6 +1118,11 @@ footer ul li{
         width: auto;
     }
 
+    #secServicios .servicioColumnReverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     #tituloPrincipal {
         top: 168px;
     }
@@ -1129,17 +1133,8 @@ footer ul li{
         margin: auto;
     }
 
-    #secServicios {
-        padding: 0;
-    }
-
     #secServicios .contenedor {
         padding: 0
-    }
-
-    #secServicios .contenedor h2 {
-        padding-top: 70px;
-        text-align: center;
     }
 
     .servIndex{
@@ -1267,7 +1262,10 @@ footer ul li{
 
 
 @media (max-width: 420px) {
-    
+    #secServicios .servicioColumnReverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     h1 {
         font-size: 40px;
     }
