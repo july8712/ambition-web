@@ -374,7 +374,7 @@ video{
 
 #secServicios .contenedor{
     padding:100px 0;
-    width: 100%;
+    /* width: 100%; */
 }
 
 /* #secServicios .violeta {
@@ -406,8 +406,12 @@ video{
 }
 
 .servicio{
-    padding: 100px 0;
+    /* padding: 100px 0; */
     overflow: hidden;
+}
+
+.swiper-slide img {
+    border-radius:15px;
 }
 
 .tituloSecServicio{
@@ -427,9 +431,13 @@ video{
     background-color: #53196B;
     width: 100%;
 }
-/* 
+ 
 .gris{
-} */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
 
 .descripcionServ{
     width: 560px;
