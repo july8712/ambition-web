@@ -73,6 +73,7 @@ header{
     display: flex;
     justify-content:center;
     position: relative;
+    /* height: 90vh; */
 }
 
 .navbar{
@@ -146,14 +147,11 @@ video{
 
 #tituloPrincipal{
     position: absolute;
-    top: 344px;
+    top: 40vh;
     margin: auto;
     color: #fff;
 }
 
-#tituloPrincipal.dobleLinea{
-    top: 280px;
-}
 
 #tituloPrincipal p{
     font-weight: 400;
@@ -372,9 +370,14 @@ video{
 
 /* ************************************ Sección Servicios ***********************************/
 
+
+#secServicios {
+    margin-bottom: 0;
+    padding: 0;
+}
+
 #secServicios .contenedor{
-    padding:100px 0;
-    /* width: 100%; */
+    width: 100%;
 }
 
 /* #secServicios .violeta {
@@ -405,8 +408,14 @@ video{
     padding: 0;
 }
 
+#secServicios .servicioColumnReverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .servicio{
     /* padding: 100px 0; */
+    width: 100%;
     overflow: hidden;
 }
 
@@ -1096,7 +1105,7 @@ footer ul li{
 
 @media (max-width: 768px) {
     header {
-        height: 50vh;
+        height: 100vh;
         width: 100%;
         overflow: hidden;
     }
@@ -1106,7 +1115,7 @@ footer ul li{
     }
 
     video{
-        height:50vh;
+        /* height:50vh; */
         width: auto;
     }
 
@@ -1118,6 +1127,19 @@ footer ul li{
         font-size: 16px;
         width: 320px;
         margin: auto;
+    }
+
+    #secServicios {
+        padding: 0;
+    }
+
+    #secServicios .contenedor {
+        padding: 0
+    }
+
+    #secServicios .contenedor h2 {
+        padding-top: 70px;
+        text-align: center;
     }
 
     .servIndex{
@@ -1254,6 +1276,10 @@ footer ul li{
         padding: 0 10px;
     }
 
+    #tituloPrincipal {
+        top: 250px
+    }
+
     #tituloPrincipal p {
         font-size: 14px;
         width: 269px;
@@ -1291,10 +1317,6 @@ footer ul li{
 
     .contFormulario {
         padding: 0 10px;
-    }
-
-    #tituloPrincipal.dobleLinea {
-        top: 179px;
     }
 
     #secContacto h2 {
