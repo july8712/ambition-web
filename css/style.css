@@ -502,7 +502,7 @@ video{
 .historia{
     display: flex;
     justify-content: space-between;
-    width:70%;
+    width:90%;
 }
 
 .historia h3{
@@ -561,6 +561,8 @@ video{
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .integrantes{
@@ -623,11 +625,13 @@ video{
     padding: 50px;
 }
 
-.galeriaClientes{
+.galeriaClientes {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 80%;
-    justify-content:space-between;
     padding: 50px;
+    gap: 50px;
 }
 
 .contClientes h3{
@@ -872,8 +876,6 @@ footer ul li{
         justify-content:space-around;
         width: 90%;
     }
-
-   
 }
 
 @media (max-width: 1280px) {
@@ -897,7 +899,7 @@ footer ul li{
     }
 
     #tituloPrincipal{
-        top: 195px;
+        top: 226px;
     }
 
     #tituloPrincipal p {
@@ -906,7 +908,7 @@ footer ul li{
     }
 
     #tituloPrincipal.dobleLinea{
-        top: 134px;
+        top: 244px;
     }
 
     #serviciosIndex, #secProyectos, #secServicios, #secNosotros, #secContacto{
@@ -1016,8 +1018,8 @@ footer ul li{
         font-size: 54px;
     }
 
-    #tituloPrincipal {
-        top: 122px;
+    #tituloPrincipal, #tituloPrincipal.dobleLinea {
+        top: 230px;
     }
 
     #tituloPrincipal p {
@@ -1025,9 +1027,18 @@ footer ul li{
         width: 513px;
     }
 
-    #serviciosIndex,#secProyectos,#secServicios,#secNosotros,#secContacto {
-        padding: 90px 0 75px 0;
+    #secServicios {
+        padding-bottom: 0;
     }
+
+    /* #secServicios .violeta .accion p {
+        padding-top: 0;
+        padding-bottom: 0;
+    } */
+
+    /* #serviciosIndex,#secProyectos,#secServicios,#secNosotros,#secContacto {
+        padding: 90px 0 75px 0;
+    } */
 
     #serviciosIndex p,
     #secProyectos p {
@@ -1054,9 +1065,38 @@ footer ul li{
         margin: 0 75px;
     }
 
+    .historia{
+        flex-direction: column;
+    }
+
+    .historia img {
+        margin-top: 30px;
+    } 
+
+    .contCards {
+        justify-content: center;
+    }
+
     .accion p {
         width: 710px;
         margin-bottom: 40px !important;
+    }
+
+    .galeriaClientes {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    #secNosotros .accion p{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contIntegrantes {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .btn-primary {
