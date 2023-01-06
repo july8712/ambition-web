@@ -1031,14 +1031,31 @@ footer ul li{
         padding-bottom: 0;
     }
 
+
+    /* .swiper-style {
+        padding:0 0 50px 0;
+    } */
+
+    .contServicio h2 {
+        margin: 70px 0 50px 0;
+    }
+
     /* #secServicios .violeta .accion p {
         padding-top: 0;
         padding-bottom: 0;
     } */
 
-    /* #serviciosIndex,#secProyectos,#secServicios,#secNosotros,#secContacto {
-        padding: 90px 0 75px 0;
-    } */
+    #serviciosIndex,
+    #secProyectos,
+    #secNosotros,
+    #secContacto {
+        padding: 70px 0 75px 0;
+        padding-bottom: 75px;
+    }
+
+    .contServicio {
+        padding: 50px 0 50px 0;
+    }
 
     #serviciosIndex p,
     #secProyectos p {
@@ -1414,8 +1431,16 @@ footer ul li{
         /* margin-bottom: 75px; */
     }
 
+    .accion{
+        padding-bottom: 50px;
+    }
+
     .accion p, footer p{
         width:80%;
+    }
+
+    .accion .btn-primary {
+        margin-bottom:50px;
     }
 
     .logo {
@@ -1429,6 +1454,18 @@ footer ul li{
 
     .btn-primary{
         padding: 13px 35px;
+    }
+
+    #primerServicio{
+        padding-top:0;
+    }
+
+    #secServicios{
+        padding-top: 70px;
+    }
+
+    .contServicio h2 {
+        margin: 70px 0 0 0;
     }
 
     /* seccion contacto */
