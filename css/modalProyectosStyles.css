@@ -81,6 +81,7 @@
   #secProyectos .carousel .item {
     background: #621e7e;
   }
+
   #secProyectos .carousel h2 {
       color: #FFF;
       text-align: center;
@@ -90,9 +91,6 @@
       font-weight: 300;
   }
 
-  /* #secProyectos .owl-dots {
-    display: none;
-  } */
 
   #secProyectos .owl-theme .owl-nav {
     display: flex;
@@ -109,14 +107,8 @@
     transition: all 250ms ease;
   }
 
-
   #secProyectos .owl-theme .owl-nav button:hover {
     background: transparent;
     color:#d19ae7;
-
-  }
-
-
-  @media (min-width: 630px){
-
+    
   }

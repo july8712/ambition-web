@@ -1,16 +1,12 @@
-console.log('PASE POR ACA');
 
 window.addEventListener('load',
 {}
 )
 
 window.addEventListener("scroll", function() {
-   let nav = document.querySelector("nav");
-   nav.classList.toggle("oscurecer", scrollY>0);
+   const nav = document.querySelector("nav");
+   nav.classList.toggle("oscurecer", scrollY > 0);
 })
-
-
-let cardProyecto = document.querySelector(".cardProyecto");
 
 const proyectos = document.querySelectorAll(".cardProyecto");
 proyectos.forEach((proyecto) => {
@@ -18,16 +14,16 @@ proyectos.forEach((proyecto) => {
 });
 
 function mostrarProyecto(evento) {
-   let id = evento.currentTarget.dataset.proyecto;
-   let popup = document.querySelector("#" + id);
+   const id = Number(evento.currentTarget.dataset.modal) + 1;
+   const popup = document.querySelector("#myModal-" + id);
    popup.classList.add("mostrar");
    popup.addEventListener("click", () => {
       cerrarProyecto(id);
    });
 }
 
-function cerrarProyecto(id){
-   let popup = document.querySelector("#" + id);
+function cerrarProyecto(id) {
+   const popup = document.querySelector("#myModal-" + id);
    popup.classList.remove("mostrar");
 }
 
