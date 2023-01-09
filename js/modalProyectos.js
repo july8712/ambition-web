@@ -1,89 +1,75 @@
-// Get the modal
-let modal = document.getElementById("myModal-1");
-let modal2 = document.getElementById("myModal-2");
-let modal3 = document.getElementById("myModal-3");
-let modal4 = document.getElementById("myModal-4");
-let modal5 = document.getElementById("myModal-5");
-let modal6 = document.getElementById("myModal-6");
+// Get the modals
+const modalsElemRef = [];
+genericBuilder('modals',modalsElemRef);
+// Get the spans 
+const spansElemRef = [];
+const spansBind = {
+    type: 'onclick',
+    callback: setSpanEvent 
+}
+genericBuilder('spans', spansElemRef, spansBind);
+ // Get the buttons
+ const buttonsElemRef = [];
+ const buttonEvent = {
+        type:'onclick',
+        callback : setBtnEvent
+    }
+genericBuilder('buttons', buttonsElemRef, buttonEvent);
 
-// Get the button that opens the modal
-let btn = document.getElementById("myBtn-1");
-let btn2 = document.getElementById("myBtn-2");
-let btn3 = document.getElementById("myBtn-3");
-let btn4 = document.getElementById("myBtn-4");
-let btn5 = document.getElementById("myBtn-5");
-let btn6 = document.getElementById("myBtn-6");
-
-// Get the <span> element that closes the modal
-let span = document.querySelectorAll(".close")[0];
-let span2 = document.querySelectorAll(".close")[1];
-let span3 = document.querySelectorAll(".close")[2];
-let span4 = document.querySelectorAll(".close")[3];
-let span5 = document.querySelectorAll(".close")[4];
-let span6 = document.querySelectorAll(".close")[5];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "flex";
-}
-btn2.onclick = function() {
-    modal2.style.display = "flex";
-}
-btn3.onclick = function() {
-    modal3.style.display = "flex";
-}
-btn4.onclick = function() {
-    modal4.style.display = "flex";
-}
-btn5.onclick = function() {
-    modal5.style.display = "flex";
-}
-btn6.onclick = function() {
-    modal6.style.display = "flex";
+// Modal Open Event
+function setBtnEvent(e) {
+    const attr = e.currentTarget.dataset.modal;
+    return modalsElemRef[attr].style.display = 'flex';
 }
 
-
-// When the user clicks on <span> (x), close the modal
-span.onclick  = function() {
-    modal.style.display = "none";
-}
-span2.onclick  = function() {
-    modal2.style.display = "none";
-}
-span3.onclick  = function() {
-    modal3.style.display = "none";
-}
-span4.onclick  = function() {
-    modal4.style.display = "none";
-}
-span5.onclick  = function() {
-    modal5.style.display = "none";
-}
-span6.onclick  = function() {
-    modal6.style.display = "none";
+// Modal Close Event
+function setSpanEvent(e) {
+    const attr = e.currentTarget.dataset.modal;
+    return modalsElemRef[attr].style.display = 'none';
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (
-    event.target == modal || 
-    event.target == modal2 || 
-    event.target == modal3 || 
-    event.target == modal4 ||
-    event.target == modal5 ||
-    event.target == modal6 
-    ) {
-
-    modal.style.display = "none";
-    modal2.style.display = "none";
-    modal3.style.display = "none";
-    modal4.style.display = "none";
-    modal5.style.display = "none";
-    modal6.style.display = "none";
-
-
-  }
+window.onclick = function(e) {
+ const isModalTarget = modalsElemRef.find((modal) => e.target === modal);
+ if (isModalTarget) {
+    isModalTarget.style.display = "none";
+ }
 }
 
+function genericBuilder(type, arrayRef , bindEvent) {
+    let lastRefFind = -1;
+    let index = 1;
+    if ( type === 'spans') {
+        const spansRef = document.querySelectorAll('.close');
+        spansRef.forEach(spanRef => {
+            spanRef[bindEvent.type] = bindEvent.callback;
+            arrayRef.push(spanRef);
+        });
+        return;
+    }
+    const selector = getSelectorByType(type);
+    while (lastRefFind !== null) {
+        lastRefFind = document.getElementById(`${selector}${index}`);
+        if (lastRefFind) {
+            arrayRef.push(lastRefFind);
+            if (bindEvent) {
+                lastRefFind[bindEvent.type] = bindEvent.callback;
+            }
+        };
+        index++;
+    }
+}
+
+function getSelectorByType(type) {
+    switch (type) {
+        case 'modals':
+            return 'myModal-'
+        
+        case 'buttons':
+            return 'myBtn-'
+        default:
+            break;
+    }
+}
 
 // GALLERY INSIDE MODAL PROYECTO JS

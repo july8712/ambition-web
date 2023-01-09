@@ -80,7 +80,6 @@ window.onload = (event) => {
     noSwiping: true
     });
 
-
     const swiper3 = new Swiper('.mySwiper3', {
       effect: "coverflow",
       // grabCursor: true,
@@ -120,10 +119,6 @@ window.onload = (event) => {
     },
     noSwiping: true
     });
-
-    
-    
-
     // swiper[0].controller.control = swiperText;
     // swiperText[0].controller.control = swiper;
 };
