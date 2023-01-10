@@ -1,179 +1,179 @@
-window.addEventListener("load", function(event) {
-    
-    (function() {
+window.addEventListener("load", function (event) {
+
+    (function () {
         // https://dashboard.emailjs.com/admin/account
         emailjs.init('yy3goWZgjqVfTC3wF');
     })();
 
     // Input Selectors
-    const contactForm = document.querySelector('.contact-form')
-    const name = document.querySelector('#name')
-    const email = document.querySelector('#email')
-    const phone = document.querySelector('#phone')
-    const message = document.querySelector('#message')
-    
+    const name = document.querySelector('#name');
+    const email = document.querySelector('#email');
+    const phone = document.querySelector('#phone');
+    const message = document.querySelector('#message');
+
     // Checkbox selectors
-    const checkboxBrand = document.querySelector('#checkboxBrand')
-    const checkboxRRSS = document.querySelector('#checkboxRRSS')
-    const checkboxApp = document.querySelector('#checkboxApp')
-    const checkboxUX = document.querySelector('#checkboxUX')
-    const checkboxManifiesto = document.querySelector('#checkboxManifiesto')
-    const checkboxId = document.querySelector('#checkboxId')
+    const checkboxBrand = document.querySelector('#checkboxBrand');
+    const checkboxRRSS = document.querySelector('#checkboxRRSS');
+    const checkboxApp = document.querySelector('#checkboxApp');
+    const checkboxUX = document.querySelector('#checkboxUX');
+    const checkboxManifiesto = document.querySelector('#checkboxManifiesto');
+    const checkboxId = document.querySelector('#checkboxId');
 
     // Labels Selectors
-    const nameLabel = document.querySelector('#nameLabel')
-    const emailLabel = document.querySelector('#emailLabel')
-    const phoneLabel = document.querySelector('#phoneLabel')
-    const messageLabel = document.querySelector('#messageLabel')
+    const nameLabel = document.querySelector('#nameLabel');
+    const emailLabel = document.querySelector('#emailLabel');
+    const phoneLabel = document.querySelector('#phoneLabel');
+    const messageLabel = document.querySelector('#messageLabel');
 
     // Small Error Selectors
-    const nameError = document.querySelector('#nameError')
-    const emailError = document.querySelector('#emailError')
-    const phoneError = document.querySelector('#phoneError')
-    const messageError = document.querySelector('#messageError')
+    const nameError = document.querySelector('#nameError');
+    const emailError = document.querySelector('#emailError');
+    const phoneError = document.querySelector('#phoneError');
+    const messageError = document.querySelector('#messageError');
 
     // Input Values    
-    let nameCurrentValue = name.value
-    let emailCurrentValue = email.value
-    let phoneCurrentValue = phone.value
-    let messageCurrentValue = message.value
-    
-    let checkboxBrandCurrentValue 
-    let checkboxRRSSCurrentValue
-    let checkboxAppCurrentValue
-    let checkboxUXCurrentValue
-    let checkboxManifiestoCurrentValue
-    let checkboxIdCurrentValue
-    
+    let nameCurrentValue = name.value;
+    let emailCurrentValue = email.value;
+    let phoneCurrentValue = phone.value;
+    let messageCurrentValue = message.value;
+
+    let checkboxBrandCurrentValue;
+    let checkboxRRSSCurrentValue;
+    let checkboxAppCurrentValue;
+    let checkboxUXCurrentValue;
+    let checkboxManifiestoCurrentValue;
+    let checkboxIdCurrentValue;
+
     // ===== INPUTS VALIDATORS
     writeName = () => {
         nameCurrentValue = name.value
-        if( nameCurrentValue.length > 0) {
-            name.classList.remove('error')
-            nameLabel.classList.remove('errorLabel')
-            nameError.classList.remove('smallErrorShow')
+        if (nameCurrentValue.length > 0) {
+            name.classList.remove('error');
+            nameLabel.classList.remove('errorLabel');
+            nameError.classList.remove('smallErrorShow');
         }
 
-        if( nameCurrentValue.length === 0) {
-            name.classList.add('error')
-            nameLabel.classList.add('errorLabel')
-            nameError.classList.add('smallErrorShow')
+        if (nameCurrentValue.length === 0) {
+            name.classList.add('error');
+            nameLabel.classList.add('errorLabel');
+            nameError.classList.add('smallErrorShow');
         }
     }
 
     writePhone = () => {
         phoneCurrentValue = phone.value
-        if( phoneCurrentValue.length > 0) {
-            phone.classList.remove('error')
-            phoneLabel.classList.remove('errorLabel')
-            phoneError.classList.remove('smallErrorShow')
+        if (phoneCurrentValue.length > 0) {
+            phone.classList.remove('error');
+            phoneLabel.classList.remove('errorLabel');
+            phoneError.classList.remove('smallErrorShow');
 
         }
 
-        if( phoneCurrentValue.length === 0) {
-            phone.classList.add('error')
-            phoneLabel.classList.add('errorLabel')
-            phoneError.classList.add('smallErrorShow')
+        if (phoneCurrentValue.length === 0) {
+            phone.classList.add('error');
+            phoneLabel.classList.add('errorLabel');
+            phoneError.classList.add('smallErrorShow');
         }
     }
 
     writeEmail = () => {
         emailCurrentValue = email.value
-        if( emailCurrentValue.length > 0) {
-            email.classList.remove('error')
-            emailLabel.classList.remove('errorLabel')
-            emailError.classList.remove('smallErrorShow')
+        if (emailCurrentValue.length > 0) {
+            email.classList.remove('error');
+            emailLabel.classList.remove('errorLabel');
+            emailError.classList.remove('smallErrorShow');
 
         }
 
-        if( emailCurrentValue.length === 0) {
-            email.classList.add('error')
-            emailLabel.classList.add('errorLabel')
-            emailError.classList.add('smallErrorShow')
+        if (emailCurrentValue.length === 0) {
+            email.classList.add('error');
+            emailLabel.classList.add('errorLabel');
+            emailError.classList.add('smallErrorShow');
 
         }
     }
 
     writeMessage = () => {
         messageCurrentValue = message.value
-        if( messageCurrentValue.length > 0) {
-            message.classList.remove('error')
-            messageLabel.classList.remove('errorLabel')
-            messageError.classList.remove('smallErrorShow')
+        if (messageCurrentValue.length > 0) {
+            message.classList.remove('error');
+            messageLabel.classList.remove('errorLabel');
+            messageError.classList.remove('smallErrorShow');
         }
 
-        if( messageCurrentValue.length === 0) {
-            message.classList.add('error')
-            messageLabel.classList.add('errorLabel')
-            messageError.classList.add('smallErrorShow')
+        if (messageCurrentValue.length === 0) {
+            message.classList.add('error');
+            messageLabel.classList.add('errorLabel');
+            messageError.classList.add('smallErrorShow');
         }
     }
 
     {// ===== CHECKBOXES VALIDATORS
-    // BRAND   CHECKBOX
-    writeCheckboxBrand = () => {
-        if (checkboxBrand.checked) {
-            checkboxBrandCurrentValue = 'Quiero diseñar mi marca'
-            // alert(checkboxBrandCurrentValue)
-        } else if (!checkboxBrand.checked) {
-            checkboxBrandCurrentValue = ''
+        // BRAND   CHECKBOX
+        writeCheckboxBrand = () => {
+            if (checkboxBrand.checked) {
+                checkboxBrandCurrentValue = 'Quiero diseñar mi marca';
+                // alert(checkboxBrandCurrentValue)
+            } else if (!checkboxBrand.checked) {
+                checkboxBrandCurrentValue = '';
+            }
+        }
+
+        // RRSS SOCIAL MEDIA CHECKBOX
+        writeCheckboxRRSS = () => {
+            if (checkboxRRSS.checked) {
+                checkboxRRSSCurrentValue = 'Necesito ayuda con mis Redes Sociales';
+                // alert(checkboxUXCurrentValue)
+            } else if (!checkboxRRSS.checked) {
+                checkboxRRSSCurrentValue = '';
+            }
+        }
+
+        // APP   CHECKBOX
+        writeCheckboxApp = () => {
+            if (checkboxApp.checked) {
+                checkboxAppCurrentValue = 'Quiero diseñar mi App';
+                // alert(checkboxUXCurrentValue)
+            } else if (!checkboxApp.checked) {
+                checkboxAppCurrentValue = '';
+            }
+        }
+
+        // UX CHECKBOX
+        writeCheckboxUX = () => {
+            if (checkboxUX.checked) {
+                checkboxUXCurrentValue = 'Quiero diseñar UX/UI';
+                // alert(checkboxUXCurrentValue)
+            } else if (!checkboxUX.checked) {
+                checkboxUXCurrentValue = '';
+            }
+        }
+
+
+        // Manifiesto CHECKBOX
+        writeCheckboxManifiesto = () => {
+            if (checkboxManifiesto.checked) {
+                checkboxManifiestoCurrentValue = 'Quiero diseñar mi Manifiesto';
+                // alert(checkboxUXCurrentValue)
+            } else if (!checkboxManifiesto.checked) {
+                checkboxManifiestoCurrentValue = '';
+            }
+        }
+
+        // Id CHECKBOX
+        writeCheckboxIdCurrentValue = () => {
+            if (checkboxId.checked) {
+                checkboxIdCurrentValue = 'Quiero diseñar mi Identidad';
+                // alert(checkboxUXCurrentValue)
+            } else if (!checkboxId.checked) {
+                checkboxIdCurrentValue = '';
+            }
         }
     }
 
-    // RRSS SOCIAL MEDIA CHECKBOX
-    writeCheckboxRRSS = () => {
-        if (checkboxRRSS.checked) {
-            checkboxRRSSCurrentValue = 'Necesito ayuda con mis Redes Sociales'
-            // alert(checkboxUXCurrentValue)
-        } else if (!checkboxRRSS.checked){
-            checkboxRRSSCurrentValue = ''
-        }
-    }
-
-    // APP   CHECKBOX
-    writeCheckboxApp = () => {
-        if (checkboxApp.checked) {
-            checkboxAppCurrentValue = 'Quiero diseñar mi App'
-            // alert(checkboxUXCurrentValue)
-        } else if (!checkboxApp.checked) {
-            checkboxAppCurrentValue = ''
-        }
-    }
-
-    // UX CHECKBOX
-    writeCheckboxUX = () => {
-        if (checkboxUX.checked) {
-            checkboxUXCurrentValue = 'Quiero diseñar UX/UI'
-            // alert(checkboxUXCurrentValue)
-        } else  if (!checkboxUX.checked){
-            checkboxUXCurrentValue = ''
-        }
-    }
 
 
-     // Manifiesto CHECKBOX
-     writeCheckboxManifiesto = () => {
-        if (checkboxManifiesto.checked) {
-            checkboxManifiestoCurrentValue = 'Quiero diseñar mi Manifiesto'
-            // alert(checkboxUXCurrentValue)
-        } else  if (!checkboxManifiesto.checked){
-            checkboxManifiestoCurrentValue = ''
-        }
-    }
 
-    // Id CHECKBOX
-    writeCheckboxIdCurrentValue = () => {
-        if (checkboxId.checked) {
-            checkboxIdCurrentValue = 'Quiero diseñar mi Identidad'
-            // alert(checkboxUXCurrentValue)
-        } else  if (!checkboxId.checked){
-            checkboxIdCurrentValue = ''
-        }
-    }}
-
-
-    
-    
 
     writeData = () => {
         nameCurrentValue = name.value
@@ -185,37 +185,36 @@ window.addEventListener("load", function(event) {
 
     sendEmail = (event) => {
 
-        event.preventDefault()
+        event.preventDefault();
 
-        if(nameCurrentValue.length === 0) {
-            name.classList.add('error')
-            nameLabel.classList.add('errorLabel')
+        if (nameCurrentValue.length === 0) {
+            name.classList.add('error');
+            nameLabel.classList.add('errorLabel');
         }
-        
-        if(emailCurrentValue.length === 0) {
-            email.classList.add('error') 
-            emailLabel.classList.add('errorLabel')
-        }
-        
-        if(phoneCurrentValue.length === 0) {
 
+        if (emailCurrentValue.length === 0) {
+            email.classList.add('error');
+            emailLabel.classList.add('errorLabel');
+        }
+
+        if (phoneCurrentValue.length === 0) {
             // this.alert('Por favor, complete el campo PHONE ')
-            phone.classList.add('error') 
-            phoneLabel.classList.add('errorLabel')
-        } 
-        
-        if(messageCurrentValue.length === 0) {
+            phone.classList.add('error');
+            phoneLabel.classList.add('errorLabel');
+        }
+
+        if (messageCurrentValue.length === 0) {
 
             // this.alert('Por favor, complete el campo MENSAJE')   
-            message.classList.add('error') 
-            messageLabel.classList.add('errorLabel')
+            message.classList.add('error');
+            messageLabel.classList.add('errorLabel');
 
-        } 
-        
+        }
+
         if (nameCurrentValue.length > 0 && emailCurrentValue.length > 0 && phoneCurrentValue.length > 0 && messageCurrentValue.length > 0) {
-            nameLabel.classList.remove('errorLabel')
-            nameLabel.classList.remove('error')
-         
+            nameLabel.classList.remove('errorLabel');
+            nameLabel.classList.remove('error');
+
 
             let message = `
                 ${nameCurrentValue}
@@ -229,16 +228,16 @@ window.addEventListener("load", function(event) {
                 ${checkboxManifiestoCurrentValue}
                 ${checkboxIdCurrentValue}
             `
-            this.alert(message)
-        
+            this.alert(message);
+
         }
     }
 
-    
 
-   
 
-        
+
+
+
 
     // sendEmail = () => {
 
@@ -254,7 +253,7 @@ window.addEventListener("load", function(event) {
     //     }
 
     //     if(name.value && email.value && message.value){
-        
+
     //         emailjs.send('service_4t8w1nq', 'template_2z9j9i9', templateParams)
     //         .then(function(response) {
     //             console.log('SUCCESS!', response.status, response.text);
@@ -282,6 +281,6 @@ window.addEventListener("load", function(event) {
     // const myFunction = (e) => {
     //     console.log('valor:',e.value)
     // }
-    
-   
+
+
 });
