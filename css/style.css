@@ -806,16 +806,16 @@ input[type="checkbox"] {
 }
 
 .error {
-    color: red;
-    outline: red solid 4px;
+    color: rgb(152, 86, 164);
+    outline: rgb(152, 86, 164) solid 4px;
 }
 
 .errorLabel {
-    color: red;
+    color: rgb(152, 86, 164);
 }
 
 .smallError {
-    color: red;
+    color: rgb(152, 86, 164);
     opacity: 0;
 }
 
