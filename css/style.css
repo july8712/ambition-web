@@ -1450,6 +1450,10 @@ footer ul li {
         /* margin-bottom: 75px; */
     }
 
+    .swiper-right h2 {
+        width: 90%;
+    }
+
     .accion {
         padding-bottom: 50px;
     }
