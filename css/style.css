@@ -858,6 +858,16 @@ footer ul li {
     margin-right: 10px;
 }
 
+#whatsapp{
+    position: fixed;
+    right:20px;
+    bottom: 20px;
+}
+
+#whatsapp img {
+    width: 70px;
+}
+
 
 @media (max-width: 1440px) {
     .historia {
