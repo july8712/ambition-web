@@ -16,6 +16,11 @@
     width: 100vw;
 }
 
+.titulo-index {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 @media (min-width: 576px) {
     
