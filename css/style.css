@@ -22,6 +22,18 @@ nav {
     width: 100% !important;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: 50ms all ease-in-out
+}
+
+
+a:hover {
+    text-decoration: none;
+    color: #dedede;
+}
+
 h1 {
     text-transform: uppercase;
     font-weight: 800;
@@ -56,7 +68,7 @@ h1 {
 
 .logo-chico {
     opacity: 0;
-    transition-delay: .5s;
+    transition-delay: 150ms;
 }
 
 .oscurecer .logo {
@@ -90,7 +102,7 @@ header {
     position: fixed;
     padding: 30px 0;
     width: 80%;
-    transition: 0.7s;
+    transition: 250ms;
     z-index: 100;
 }
 
@@ -120,7 +132,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    transition: 0.7s;
+    transition: all ease 250ms;
     flex-wrap: wrap;
 }
 
@@ -132,7 +144,7 @@ nav .container-fluid {
     font-weight: 500;
     font-size: 24px;
     margin-left: 50px;
-    transition: 0.7s;
+    transition: 250ms;
 }
 
 .nav-item:hover,
@@ -145,7 +157,7 @@ nav .container-fluid {
 .logo {
     width: 105px;
     height: 105px;
-    transition: all ease 0.7s;
+    transition: all ease 250ms;
     position: absolute;
     top: 0;
     left: 0;
@@ -206,31 +218,31 @@ video {
 
 /* ******************************** Index ********************************/
 
-
+/* 
 .linea {
-    width: 40px;
+    width: 24px;
     background: linear-gradient(180deg, #2641CD 0%, #621E7E 74.48%);
     border-radius: 15.9431px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
+} */
 
-.linea span {
-    display: block;
-    width: 100px;
-    height: 100px;
+/* .linea span {
+    width: 75px;
+    height: 75px;
     background: red;
     border-radius: 50%;
-}
+} */
 
 .titServicio {
-    width: 500px;
-    height: 550px;
+    /* width: 300px;
+    height: 300px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-block: 40vh;
 }
 
 .servIndex {
@@ -248,8 +260,9 @@ video {
 
 .columna img {
     border-radius: 30px;
-    width: 500px;
-    height: 500px;
+    width: auto;
+    height: 50vh;
+    /* margin-block: 10vh */
 }
 
 .columna img:last-child,
@@ -260,7 +273,7 @@ video {
 .columna div h2 {
     font-style: italic;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 45px;
     line-height: 100%;
     text-transform: uppercase;
     margin: 0;
@@ -743,20 +756,16 @@ form div:first-child {
 input[type="text"],
 input[type="email"] {
     width: 100%;
-    color: #C23FF9;
+    /* color: #C23FF9; */
 }
 
-input[type="email"] {
-    margin: 15px 0;
-    color: #C23FF9;
-}
 
 input,
 textarea {
     border: 1px solid #FFFFFF;
     border-radius: 12px;
     padding: 15px;
-    color: #C23FF9;
+    /* color: #C23FF9; */
 }
 
 textarea {
@@ -788,6 +797,7 @@ label {
     margin-top: 10px;
     /* color: #C23FF9; */
     color: white;
+    margin-bottom: 5px
 }
 
 .asesoria label {
@@ -806,6 +816,18 @@ input[type="checkbox"] {
 }
 
 .error {
+<<<<<<< HEAD
+    /* color: violet; */
+    outline: violet solid 4px;    
+}
+
+.errorLabel {
+    color: inherit;
+}
+
+.smallError{
+    color: violet;
+=======
     color: rgb(152, 86, 164);
     outline: rgb(152, 86, 164) solid 4px;
 }
@@ -816,10 +838,12 @@ input[type="checkbox"] {
 
 .smallError {
     color: rgb(152, 86, 164);
+>>>>>>> ce135da882afda6b6a17b701cfb0ced8b4655ab8
     opacity: 0;
 }
 
-.smallErrorShow {
+.smallErrorShow{
+    margin-top: 3px;
     opacity: 1;
 }
 
@@ -893,7 +917,7 @@ footer ul li {
 /* ************************************ Tablet ********************************************* */
 
 
-@media (max-width: 1280px) {
+@media (max-width: 1800px) {
 
     .contenedor-nav {
         width: 90%;
@@ -964,8 +988,8 @@ footer ul li {
     }
 
     .linea span {
-        width: 95px;
-        height: 95px;
+        width: 55px;
+        height: 55px;
     }
 
     .columna img {
@@ -1108,8 +1132,7 @@ footer ul li {
     }
 
     .titServicio {
-        width: 250px;
-        height: 300px;
+        margin-block: 32vh;
     }
 
     .columna div h2 {
@@ -1209,7 +1232,7 @@ footer ul li {
     }
 
     video {
-        height: 50vh;
+        height: 100vh;
         width: auto;
     }
 
@@ -1240,9 +1263,6 @@ footer ul li {
         display: none;
     }
 
-    .titServicio {
-        height: 213px;
-    }
 
     .swiper-slide h3{
         margin-bottom: 20px;

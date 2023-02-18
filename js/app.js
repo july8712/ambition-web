@@ -17,7 +17,7 @@ function mostrarProyecto(evento) {
    const id = Number(evento.currentTarget.dataset.modal) + 1;
    const popup = document.querySelector("#myModal-" + id);
    popup.classList.add("mostrar");
-   popup.addEventListener("click", () => {
+   popup.addEventListener("mousedown", () => {
       cerrarProyecto(id);
    });
 }
