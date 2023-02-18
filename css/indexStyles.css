@@ -1,0 +1,85 @@
+/* HOJA DE ESTILOS complementaria QUE EDITA LA PAGINA HOME O INDEX */ 
+
+.index-image {
+    width: 75vw;
+    height: auto;
+    border-radius: 25px;
+    max-width: 400px;
+}
+
+.index-box {
+    margin-top: 20vh
+}
+
+.linea {
+    text-align: center;
+    width: 100vw;
+}
+
+.titulo-index {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 576px) {
+    
+    .linea {
+        text-align: left;
+        width: 24px;
+        background: linear-gradient(180deg, #2641CD 0%, #621E7E 74.48%);
+        border-radius: 15.9431px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    } 
+
+    .index-image {
+        max-width: 400px;
+        width: 30vw;
+    }
+
+    .index-box-margin-right {
+        margin-right: 6vw
+    }
+
+     .index-box-margin-neg-left {
+        margin-left: -8vw
+    } 
+    
+    .index-box-margin-left {
+        margin-left: 9vw;
+    }
+} 
+
+@media (min-width: 900px) {
+    
+    .linea {
+        text-align: left;
+        width: 24px;
+        background: linear-gradient(180deg, #2641CD 0%, #621E7E 74.48%);
+        border-radius: 15.9431px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    } 
+
+    .index-image {
+        max-width: 400px;
+        width: 30vw;
+    }
+
+    .index-box-margin-right {
+        margin-right: 6vw
+    }
+
+     .index-box-margin-neg-left {
+        margin-left: -8vw
+    } 
+    
+    .index-box-margin-left {
+        margin-left: 9vw;
+    }
+} 

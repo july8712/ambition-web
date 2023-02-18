@@ -5,7 +5,7 @@ window.onload = (event) => {
       // grabCursor: true,
       centeredSlides: true,
       slidesPerView: "auto",
-      loop: true,
+      loop: false,
       coverflowEffect: {
         rotate: 0,
         stretch: 80,
@@ -17,7 +17,11 @@ window.onload = (event) => {
         nextEl: ".swiper-button-next-1",
         prevEl: ".swiper-button-prev-1"
       },
-      noSwiping: true
+      noSwiping: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
     });
 
     const swiperText = new Swiper('.mySwiperText', {
@@ -25,7 +29,7 @@ window.onload = (event) => {
     // grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-    loop: true,
+    loop: false,
     coverflowEffect: {
       rotate: 0,
       stretch: 80,
@@ -45,7 +49,7 @@ window.onload = (event) => {
       // grabCursor: true,
       centeredSlides: true,
       slidesPerView: "auto",
-      loop: true,
+      loop: false,
       coverflowEffect: {
         rotate: 0,
         stretch: 80,
@@ -65,7 +69,7 @@ window.onload = (event) => {
     // grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-    loop: true,
+    loop: false,
     coverflowEffect: {
       rotate: 0,
       stretch: 80,
@@ -85,7 +89,7 @@ window.onload = (event) => {
       // grabCursor: true,
       centeredSlides: true,
       slidesPerView: "auto",
-      loop: true,
+      loop: false,
       coverflowEffect: {
         rotate: 0,
         stretch: 80,
@@ -105,7 +109,7 @@ window.onload = (event) => {
     // // grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-    loop: true,
+    loop: false,
     coverflowEffect: {
       rotate: 0,
       stretch: 80,

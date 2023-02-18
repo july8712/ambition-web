@@ -40,9 +40,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                             </li>
-                            <!-- <li class="nav-item">
+                            <!-- <!-- <li class="nav-item">
                                 <a class="nav-link" href="proyectos.html">Proyectos</a>
-                            </li> -->
+                            </li> --> -->
                             <li class="nav-item">
                                 <a class="nav-link" href="servicios.html">Servicios</a>
                             </li>
@@ -79,19 +79,19 @@
                                 <div class="contColumnas">
                                     <div class="columnaForm">
                                         <label for="name" id="nameLabel">Nombre</label>
-                                        <input type="text" value="" onfocusout="writeName()" onchange="writeName()" placeholder="Sofía" id="name" name="name" class="">
-                                        <small class="smallError" id="nameError">Por favor completa este campo con tu Nombre completo.</small>
+                                        <input type="text" value="" onfocusout="writeName()" onchange="writeName()" placeholder="Nombre name" id="name" name="name" class="">
+                                        <small class="smallError" id="nameError">Completa este campo</small>
 
                                         <label for="phone" id="phoneLabel">Celular</label>
                                         <input type="text" value="" onfocusout="writePhone()" onchange="writeData()" placeholder="541112345678" id="phone" name="phone">
-                                        <small class="smallError" id="phoneError">Campo obligatorio</small>
+                                        <small class="smallError" id="phoneError">Completa este campo</small>
                                     
                                     </div> 
 
                                     <div class="columnaForm">
                                         <label for="email" id="emailLabel">Correo Electrónico</label>
-                                        <input type="email" onfocusout="writeEmail()"  onchange="writeData()" placeholder="sofiasanchez@email.com" id="email" name="email" value="">
-                                        <small class="smallError" id="emailError">Campo obligatorio</small>
+                                        <input type="email" onfocusout="writeEmail()"  onchange="writeData()" placeholder="tudireccion@email.com" id="email" name="email" value="">
+                                        <small class="smallError" id="emailError">Completa este campo</small>
                                         
 
                                         <label for="asesoria">Búscas asesoría en:</label>
@@ -119,7 +119,7 @@
                                 </div>
                             </div>
                             <div class="envio">
-                                <button  class="btn-primary">Enviar</button>
+                                <button  class="btn-primary" onkeypress="sendEmail()">Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -136,16 +136,11 @@
             <img src="../assets/img/logo_blanco.png" alt="Logo Ambition">
             <p>Es momento de construir juntos una estrategia para lograr tus objetivos de marca.</p>
             <ul>
-                <!-- <li><img src="assets/img/WhatsApp.png" alt="WhatsApp" class="redes"> +54 351 1234567</li>
-                <li><img src="assets/img/facebook.png" alt="Facebook" class="redes"> @ambtionagencia</li>
-                <li><img src="assets/img/Instagram.png" alt="Instagram" class="redes">@ambitionagenciamkt</li>
-                <li><img src="assets/img/linkedin.svg" alt="Linkedin" class="redes">@ambitionagenciamkt</li>
-                <li><img src="assets/img/mail.png" alt="Email" class="redes">@ambitionagenciamkt</li> -->
-                <li><img src="../assets/img/iconos/tel.png" alt="WhatsApp" class="redes"> +54 351 1234567</li>
-                <li><img src="../assets/img/iconos/Facebook.png" alt="Facebook" class="redes"> @ambtionagencia</li>
-                <li><img src="../assets/img/iconos/Instagram.png" alt="Instagram" class="redes">@ambitionagenciamkt</li>
-                <li><img src="../assets/img/iconos/linkedin.png" alt="Linkedin" class="redes">@ambitionagenciamkt</li>
-                <li><img src="../assets/img/iconos/mail.png" alt="Email" class="redes">@ambitionagenciamkt</li>
+                <li><a href="https://wa.me/message/SJCCXFJZMD6EA1" target="_blank"> <img src="../assets/img/iconos/tel.png" alt="WhatsApp" class="redes"> +54 351 1234567 </a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100085191393630" target="_blank"> <img src="../assets/img/iconos/Facebook.png" alt="Facebook" class="redes"> @ambtionagencia </a> </li>
+                <li><a href="https://www.instagram.com/ambition.agenciamkt/" target="_blank"> <img src="../assets/img/iconos/Instagram.png" alt="Instagram" class="redes">@ambitionagenciamkt </a></li>
+                <li><a href="https://www.linkedin.com/company/ambition-marketing-agency/about/?viewAsMember=true" target="_blank"> <img src="../assets/img/iconos/linkedin.png" alt="Linkedin" class="redes">@ambitionagenciamkt </a></li>
+                <li><a href="mailto:ambition.agenciamkt@gmail.com " target="_blank"> <img src="../assets/img/iconos/mail.png" alt="Email" class="redes">@ambitionagenciamkt </a></li>
             </ul> 
         </div>
 
