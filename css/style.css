@@ -186,7 +186,7 @@ video {
 }
 
 #tituloPrincipal.dobleLinea {
-    top: 50vh;
+    top: 45%;
 }
 
 
@@ -841,7 +841,7 @@ footer {
     background: #621E7E;
     display: flex;
     justify-content: center;
-    padding: 75px 0;
+    padding: 100px 0;
     color: #fff;
 }
 
@@ -1002,11 +1002,17 @@ footer ul li {
     }
 
     .logo_footer {
-        width: 125px;
+        max-width: 185px;
+    }
+
+    .contenedor_logo_footer {
+        width: 25%;
+        display: flex;
+        justify-content: center;
     }
 
     footer {
-        padding: 40px 0;
+        padding: 100px 0;
     }
 
     footer p {
