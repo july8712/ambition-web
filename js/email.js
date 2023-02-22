@@ -2,7 +2,7 @@ window.addEventListener("load", function (event) {
 
     (function () {
         // https://dashboard.emailjs.com/admin/account
-        emailjs.init('yy3goWZgjqVfTC3wF');
+        emailjs.init('CDXnxVN7V7biurLfY');
     })();
 
     // Input Selectors
@@ -254,7 +254,7 @@ window.addEventListener("load", function (event) {
 
          if(name.value && email.value && message.value){
 
-             emailjs.send('service_4t8w1nq', 'template_2z9j9i9', templateParams)
+             emailjs.send('service_776wmhc', 'template_ys89kbg', templateParams)
              .then(function(response) {
                  console.log('SUCCESS!', response.status, response.text);
              }, function(error) {
