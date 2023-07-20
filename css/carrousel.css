@@ -19,7 +19,8 @@
 }
 
 .swiper-slide p,
-.swiper-slide h3 {
+.swiper-slide h3,
+.swiper-slide .contenedor {
 
     opacity: 0.01;
 }
@@ -36,7 +37,8 @@
 .swiper-slide-visible img,
 .swiper-slide-visible,
 .swiper-slide-active p,
-.swiper-slide-active h3 {
+.swiper-slide-active h3,
+.swiper-slide-active .contenedor {
     opacity: 1
 }
 

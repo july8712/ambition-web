@@ -31,7 +31,8 @@ window.onload = (event) => {
       stretch: 80,
       depth: 200,
       modifier: 2,
-      slideShadows: false
+      slideShadows: false,
+      
     },
     navigation: {
       nextEl: ".swiper-button-next-1",
